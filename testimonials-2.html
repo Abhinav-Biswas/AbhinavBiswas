@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Testimonials</title>
+<meta name="description" content="Abhinav Biswas - Testimonials" />
+<meta name="keywords" content="Abhinav Biswas - Testimonials" />
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-mobile-web-app-status-bar-style" content="grey" /> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" /> 
+<link rel="shortcut icon" href="images/favicon.png" /> 
+<link rel="bookmark icon" href="images/favicon.png" /> 
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="js/twitter.js"></script> 
+<script src="js/jquery.isotope.min.js"></script>      
+<script src="js/custom.js"></script>   
+<script>
+$(document).ready(function(){
+
+    var $container = $('#portfolio-container')
+    // initialize Isotope
+        $container.isotope({
+            // options...
+            resizable: false, // disable normal resizing
+            layoutMode : 'fitRows',
+			itemSelector : '.element2',
+            animationEngine : 'best-available',
+
+            // set columnWidth to a percentage of container width
+            masonry: { columnWidth: $container.width() / 5 }
+        });
+
+        // update columnWidth on window resize
+        $(window).smartresize(function(){
+            $container.isotope({
+            // update columnWidth to a percentage of container width
+            masonry: { columnWidth: $container.width() / 5 }
+            });
+        });
+        $container.imagesLoaded( function(){
+
+                $container.isotope({
+            // options...
+                });
+        });
+
+        $('#portfolio-filter a').click(function(){
+            var selector = $(this).attr('data-filter');
+            $container.isotope({ filter: selector });
+            return false;
+        });
+});
+</script>
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+</head>
+
+<body>
+<div id="header">
+    	<!-- Start navigation area -->
+        <div id="navigation">
+
+        	<div id="navigation_wrap">
+
+                <!-- Start contact info area -->
+                 <div id="conteactinfo"><strong>Email : </strong> abhinav.biswas.prince@gmail.com  <br>  <strong>Phone :</strong> (+91) 9433802599</div>
+                <!-- End contact info area -->
+                <!-- Start navigation -->
+                <div id="navi">
+                
+                    <ul>
+                    
+                         <li style="padding:10px 12px 6px 12px;"><a href="index.html" title="Home">
+                        <img src="images/home-icon.png" height="24" </a></li>
+                        <li><a href="#" title="Portfolio">Portfolio</a>
+                        	<ul>
+                            	<li><a href="buttons-buttonshapes.html" title="Response Buttons">Buttons</a></li>
+                                <li><a href="columns.html" title="Response Columns">Columns</a></li>
+                                <li><a href="icons-and-lists.html" title="Response Icons &amp; Lists">Icons &amp; Lists</a></li>
+                                <li><a href="notifications.html" title="Response Notifications">Notifications</a></li>
+                                <li><a href="tabs-and-toggles.html" title="Response Tabs &amp; Toggles">Tabs &amp; Toggles</a></li>
+                                <li><a href="#" title="Response Other Dropdown">Other</a>
+                                	<ul>
+                                    	<li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>                        
+                        <li><a href="testimonials.html" title="Testimonials">Testimonials</a>
+                        	<!--<ul>
+                            	<li><a href="portfolio-2-column.html" title="2 Column Filtered Portfolio">2 Columns</a></li>
+                                <li><a href="portfolio-3-column.html" title="3 Column Filtered Portfolio">3 Columns</a></li>
+                                <li><a href="testimonials.html" title="4 Column Filtered Portfolio">4 Columns</a></li>
+                            </ul>-->
+                        </li>
+                        <li><a href="http://abhinavtheprince.blogspot.com" target="_blank" title="Personal Blog">Blog</a>
+                        	<!--<ul>
+                            	<li><a href="blog-left.html" title="Left Column Blog">Left Column Blog</a></li>
+                                <li><a href="blog.html" title="Right Column Blog">Right Column Blog</a></li>
+                                <li><a href="blog-post.html" title="Blog Post">Post</a>
+                                	<ul>
+                                        <li><a href="left-blog-post.html" title="Left Column Blog Post">Left Column Post</a></li>
+                                    <li><a href="blog-post.html" title="Right Column Blog Post">Right Column Post</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                        </li>
+                        <li><a href="contact-me.html" title="Contact Me">Contact Me</a></li>
+                    
+                    </ul>
+                
+                </div>
+                <!-- End navigation -->
+                
+			</div>
+        
+        </div>
+        <!-- End navigation area -->
+        <div class="clear"></div>
+        <!-- Start Social & Logo area -->
+        <div id="header_small">
+        	<!-- Start Social area -->
+        	<div class="social">
+            	
+                <ul>
+                <li><a href="https://plus.google.com/100583380599913087854/about" class="social-google"></a></li>
+                <li><a href="https://www.facebook.com/abhinav.biswas" class="social-facebook"></a></li>
+                <li><a href="https://twitter.com/Abhinav_Biswas" class="social-twitter"></a></li>
+                <li><a href="http://in.linkedin.com/in/abhinavbiswas" class="social-linkedin"></a></li>
+                <li><a href="images/QRCode.png" target="_blank" class="social-forrst"></a></li>
+                <li><a href="http://www.quora.com/Abhinav-Biswas" class="social-dribbble"></a></li>
+                </ul>
+                
+            </div>
+            <!-- End Socialarea -->
+            
+            <!-- Start Logo area -->
+            <div id="logo">
+              <a href="http://abhinav-biswas.appspot.com" title="Abhinav Biswas"><b>Abhinav Biswas</b></a>
+            </div>
+            <!-- End Logo area -->
+        
+        </div>
+        <!-- End Social & Logo area -->
+
+</div>
+
+<div id="main">
+    <!-- Start H1 Title -->
+    <div class="titlesnormal">
+    
+    	<h1>"It was hard to earn - My Testimonials"</h1>
+        
+        <span></span>
+    
+    </div>
+    <!-- End H1 Title -->
+    <!-- Start Main Body Wrap -->
+    <div id="main-wrap">
+        
+        <!-- Start Box -->
+        <div class="boxes-full">
+        
+        	<div class="boxes-padding fullpadding">
+            	
+                <!-- Start None Split Section -->
+            	<div class="splitnone">
+                
+                    <div id="portfolio-filter-choice"><a href="testimonials-2.html" title="2 Column View"><img src="images/2column.png" alt="2 Column View" width="25" height="25"></a> <a href="testimonials-3.html" title="3 Column View"><img src="images/3column.png" alt="3 Column View" width="25" height="25"></a> <a href="testimonials.html" title="4 Column View"><img src="images/4column.png" alt="4 Column View" width="25" height="25"></a></div>
+                
+                	<!-- Start Portfolio Filter -->
+               	  <div id="portfolio-filter">
+                    
+                    	<ul>
+                        	
+                            <li><strong><h3>Apply Filter: </h3></strong></li>
+                            <li><a href="#portfolio-filter" title="All" class="orangebutton smallrectange" data-filter="*">Show all</a></li>
+                        	<li><a href="#portfolio-filter" title="Certifications" class="orangebutton smallrectange" data-filter=".certifications">Certifications</a></li>
+                            <li><a href="#portfolio-filter" title="Achievements" class="orangebutton smallrectange" data-filter=".achievements">Achievements</a></li>
+                            <li><a href="#portfolio-filter" title="Academics" class="orangebutton smallrectange" data-filter=".academics">Academics</a></li>
+                           
+                        
+                        </ul>
+                    
+                    </div>
+                    <!-- End Portfolio Filter -->
+                
+                </div>
+            	<!-- End None Split Section -->
+
+            </div>
+
+            <span class="box-arrow"> </span>
+        
+        </div>
+        <!-- End Box -->
+        
+        <!-- Start Box -->
+        <div class="boxes-full">
+        
+        	<div class="boxes-padding fullpadding">
+            	
+                <!-- Start None Split Section -->
+            	<div class="splitnone">
+                
+                	<div id="portfolio-container">
+                    
+                    	<!-- Start 4 column portfolio -->
+                        <div class="element2 certifications">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">IBM Blue Scholar<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/IBM-Blue-Scholar-001.jpg" rel="prettyPhoto" title="IBM Blue Scholar"><img src="images/latest-projects/IBM-Blue-Scholar-001.jpg" alt="IBM Blue Scholar" /></a></div>
+                                <div class="text">IBM Blue Scholar<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 achievements academics">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">Best Student Award<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/Best-Student-001.jpg" rel="prettyPhoto" title="Best Student of the Year Award"><img src="images/latest-projects/Best-Student-001.jpg" alt="Best Student of the Year" /></a></div>
+                                <div class="text">Best Student of the Year Award<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="element2 achievements">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">Merit Scholarship<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/Indian-Oil-Scholarship-001.jpg" rel="prettyPhoto" title="Academic Scholarship for B.Tech, worth Rs. 1.2 Lakhs"><img src="images/latest-projects/Indian-Oil-Scholarship-001.jpg" alt="Indian Oil Scholarship" /></a></div>
+                                <div class="text">Indian Oil Scholarship<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 certifications">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">IBM Certification DB2 9<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/IBM-DB2-001.jpg" rel="prettyPhoto" title="IBM Certified Academic Associate, Exam Code - 302"><img src="images/latest-projects/IBM-DB2-001.jpg" alt="IBM DB2 9" /></a></div>
+                                <div class="text">IBM Certified Academic Associate<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 certifications">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">IBM Certification RFT 8.0<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/IBM-RFT-001.jpg" rel="prettyPhoto" title="IBM Certified Solutions Designer, Exam Code - 842"><img src="images/latest-projects/IBM-RFT-001.jpg" alt="IBM Certified Solutions Designer" /></a></div>
+                                <div class="text">IBM Certified Solutions Designer<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 certifications">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">IBM Certification WID 6.2<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/IBM-WID-001.jpg" rel="prettyPhoto" title="IBM Certified Solution Developer"><img src="images/latest-projects/IBM-WID-001.jpg" alt="IBM Certified Solution Developer" /></a></div>
+                                <div class="text">IBM Certified Solution Developer<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 certification">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">HTML Certification<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/HTML-Training-Certificate-001.jpg" rel="prettyPhoto" title="NIIT HTML Training Certificate"><img src="images/latest-projects/HTML-Training-Certificate-001.jpg" alt="NIIT HTML Training Certificate" /></a></div>
+                                <div class="text">NIIT HTML Training Certificate<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 certification">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">RDBMS Certification<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/RDBMS-Oracle-Training-Certificate-001.jpg" rel="prettyPhoto" title="Oracle RDBMS Certification by IBM"><img src="images/latest-projects/RDBMS-Oracle-Training-Certificate-001.jpg" alt="Lorem ipsum dolor sit amet" /></a></div>
+                                <div class="text">Oracle RDBMS Certification by IBM<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+                        
+                        <div class="element2 academics">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">Mark Sheet, Class 12<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/Class-12-Mark-Sheet-001.jpg" rel="prettyPhoto" title="Class 12 Mark Sheet, Army School Barrackpore"><img src="images/latest-projects/Class-12-Mark-Sheet-001.jpg" alt="Class 12 Mark Sheet, Army School Barrackpore" /></a></div>
+                                <div class="text">Class 12 Mark Sheet, Army School Barrackpore<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+
+                        <div class="element2 academics">
+                        
+                        	<div class="portfoliowrap">
+                                                
+                                <div class="title">Mark Sheet, Class 10<span class="titlearrow"></span></div>
+                                <div class="portfolioimage"><a href="images/latest-projects/Class-10-Mark-Sheet-001.jpg" rel="prettyPhoto" title="Class 10 Mark Sheet, Army School Barrackpore"><img src="images/latest-projects/Class-10-Mark-Sheet-001.jpg" alt="Class 10 Mark Sheet, Army School Barrackpore" /></a></div>
+                                <div class="text">Class 10 Mark Sheet, Army School Barrackpore<span class="textarrow"></span></div>
+                            
+                            </div>
+                        
+                        </div>
+                        <!-- End 4 column portfolio -->
+                    
+                    </div>
+                
+                </div>
+            	<!-- End None Split Section -->
+
+            </div>
+
+            <span class="box-arrow"></span>
+        
+        </div>
+        <!-- End Box -->
+    
+    </div>
+    <!-- End Main Body Wrap -->
+
+</div>
+<!-- Start Footer -->
+<div id="footer">
+	<!-- Start Footer Top -->
+	<div id="footertop">
+    
+    	<div class="footerwrap">
+    		<!-- Start Latest Tweets -->
+            <div id="latest-tweets">
+                <a href="https://twitter.com/Abhinav_Biswas" target="_blank"><div id="twittertitle">Tweets</div></a>
+                <div id="twitterbody">
+                <a class="twitter-timeline" href="https://twitter.com/Abhinav_Biswas" data-widget-id="348042726551453697" height="260" data-chrome="noheader transparent noscrollbar">Tweets by @Abhinav_Biswas</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                </div>
+            </div>
+            <!-- End Latest Tweets -->
+    		<!-- Start Useful Links -->
+            <div id="useful_links">
+                <div id="usefultitle">Blog Posts
+                <a href="http://abhinavtheprince.blogspot.com/feeds/posts/default" target="_blank">
+                <img src="images/rss.png" height="20" style="padding-left:50%"></a>
+                </div>
+                <div id="usefulbody">
+                <script src="http://feeds.feedburner.com/AbhinavThePrince?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/AbhinavThePrince"></a><br />Powered by FeedBurner</p> </noscript>
+                </div>
+            </div>
+            <!-- End Useful Links -->
+    		<!-- Start Testimonials -->
+            <div id="latest-testimonial">
+                <a href="testimonials.html"> <div id="testimonialtitle">Testimonials</div></a>
+                <div id="testimonialbody">
+                	<!-- Starting simple slider -->
+                    <a href="testimonials.html"><div id="simpleslider">
+                            <!-- Slide 1 -->
+                            <div class="current">
+                                <h8>IBM Blue Scholar</h8>
+                                <p><img src="images/latest-projects/smaller-images/IBM-Blue-Scholar-001.jpg" height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 1 -->
+                            <!-- Slide 2 -->
+                            <div>
+                                <h8>Best Student of the Year</h8>
+                                <p><img src="images/latest-projects/smaller-images/Best-Student-001.jpg" height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 2 -->
+                            <!-- Slide 3 -->
+                            <div>
+                                <h8>Indian Oil Scholarship</h8>
+                                <p><img src="images/latest-projects/smaller-images/Indian-Oil-Scholarship-001.jpg"  height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 3 -->
+                            <!-- Slide 4 -->
+                            <div>
+                                <h8>IBM Certified Academic Associate</h8>
+                                <p><img src="images/latest-projects/smaller-images/IBM-DB2-001.jpg"  height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 4 -->
+                            <!-- Slide 5 -->
+                            <div>
+                                <h8>IBM Certified Solution Developer</h8>
+                                <p><img src="images/latest-projects/smaller-images/IBM-WID-001.jpg"  height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 5 -->
+                    </div></a>
+                    <!-- Ending simple slider -->
+                	<div class="speachlower"></div>
+                </div>
+            </div>
+            <!-- End Latest Testimonials -->
+    	</div>
+    
+	</div>
+	<!-- End Footer Top -->
+    <div class="clear"></div>
+    <!-- Start Footer Bottom -->
+    <div id="footerbottom">
+    
+    	<div class="footerwrap">
+        
+        	<!-- Start Copyright Div -->
+            <div id="copyright">&copy; <b>Abhinav Biswas</b> - All rights reserved ! </div>
+            
+            <!-- End Copyright Div -->
+
+            <!-- Start Social area -->
+            <div class="socialfooter">
+                
+                <ul>
+                <li><a href="https://plus.google.com/100583380599913087854/about" class="social-google"></a></li>
+                <li><a href="https://www.facebook.com/abhinav.biswas" class="social-facebook"></a></li>
+                <li><a href="https://twitter.com/Abhinav_Biswas" class="social-twitter"></a></li>
+                <li><a href="http://in.linkedin.com/in/abhinavbiswas" class="social-linkedin"></a></li>
+                <li><a href="images/QRCode.png" target="_blank" class="social-forrst"></a></li>
+                <li><a href="http://www.quora.com/Abhinav-Biswas" class="social-dribbble"></a></li>
+                </ul>
+                
+            </div>
+            <!-- End Socialarea -->
+        
+        </div>
+    
+    </div>
+    <!-- End Footer Bottom -->
+</div>
+<!-- End Footer -->
+<!-- Start Scroll To Top Div -->
+<div id="scrolltab"></div>
+<!-- End Scroll To Top Div -->
+<script>
+	//// Start Simple Sliders ////
+	$(function() {
+		setInterval("rotateDiv()", 10000);
+	});
+		
+		function rotateDiv() {
+		var currentDiv=$("#simpleslider div.current");
+		var nextDiv= currentDiv.next ();
+		if (nextDiv.length ==0)
+			nextDiv=$("#simpleslider div:first");
+		
+		currentDiv.removeClass('current').addClass('previous').fadeOut('2000');
+		nextDiv.fadeIn('3000').addClass('current',function() {
+			currentDiv.fadeOut('2000', function () {currentDiv.removeClass('previous');});
+		});
+	
+	}
+	//// End Simple Sliders //// 
+</script> 
+</body>
+</html>

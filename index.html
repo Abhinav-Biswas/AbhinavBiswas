@@ -1,0 +1,437 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Abhinav Biswas</title>
+<meta name="description" content="Abhinav Biswas" />
+<meta name="keywords" content="Abhinav Biswas" />
+<link rel="shortcut icon" href="images/favicon.png" /> 
+<link rel="bookmark icon" href="images/favicon.png" /> 
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<meta name="apple-mobile-web-app-capable" content="yes" /> 
+<meta name="apple-mobile-web-app-status-bar-style" content="grey" /> 
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" /> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+<script src="js/twitter.js"></script>    
+<script src="js/custom.js"></script>   
+<script>
+	//// Start Simple Sliders ////
+	$(function() {
+		setInterval("rotateDiv()", 10000);
+	});
+		
+		function rotateDiv() {
+		var currentDiv=$("#simpleslider div.current");
+		var nextDiv= currentDiv.next ();
+		if (nextDiv.length ==0)
+			nextDiv=$("#simpleslider div:first");
+		
+		currentDiv.removeClass('current').addClass('previous').fadeOut('2000');
+		nextDiv.fadeIn('3000').addClass('current',function() {
+			currentDiv.fadeOut('2000', function () {currentDiv.removeClass('previous');});
+		});
+	
+	}
+	//// End Simple Sliders //// 
+</script> 
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function(){
+    $("a[rel^='prettyPhoto']").prettyPhoto();
+  });
+</script>
+</head>
+
+<body>
+<div id="header">
+    	<!-- Start navigation area -->
+        <div id="navigation">
+
+        	<div id="navigation_wrap">
+
+                <!-- Start contact info area -->
+                <div id="conteactinfo"><strong>Email : </strong> abhinav.biswas.prince@gmail.com  <br>  <strong>Phone :</strong> (+91) 9433802599</div>
+                <!-- End contact info area --> 
+                <!-- Start navigation -->
+                <div id="navi">
+                
+                    <ul>
+                    
+                        <li style="padding:10px 12px 6px 12px;"><a href="index.html" title="Home">
+                        <img src="images/home-icon.png" height="24" </a></li>
+                        <li><a href="#" title="Portfolio">Portfolio</a>
+                        	<ul>
+                            	<li><a href="projects.html" title="Projects">Projects</a></li>
+                                <li><a href="" title="Curriculum Vitae">Curriculum Vitae</a></li>
+                                <li><a href="buttons-buttonshapes.html" title="Response Buttons">Buttons</a></li>
+                                <li><a href="columns.html" title="Response Columns">Columns</a></li>
+                                <li><a href="icons-and-lists.html" title="Response Icons &amp; Lists">Icons &amp; Lists</a></li>
+                                <li><a href="notifications.html" title="Response Notifications">Notifications</a></li>
+                                <li><a href="tabs-and-toggles.html" title="Response Tabs &amp; Toggles">Tabs &amp; Toggles</a></li>
+                                <li><a href="#" title="Response Other Dropdown">Other</a>
+                                	<ul>
+                                    	<li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                        <li><a href="#" title="Response Other Dropdown">Demo Tab</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="testimonials.html" title="Testimonials">Testimonials</a>
+                        	<!--<ul>
+                            	<li><a href="portfolio-2-column.html" title="2 Column Filtered Portfolio">2 Columns</a></li>
+                                <li><a href="portfolio-3-column.html" title="3 Column Filtered Portfolio">3 Columns</a></li>
+                                <li><a href="testimonials.html" title="4 Column Filtered Portfolio">4 Columns</a></li>
+                            </ul>-->
+                        </li>
+                        <li><a href="http://abhinavtheprince.blogspot.com" target="_blank" title="Personal Blog">Blog</a>
+                        	<!--<ul>
+                            	<li><a href="blog-left.html" title="Left Column Blog">Left Column Blog</a></li>
+                                <li><a href="blog.html" title="Right Column Blog">Right Column Blog</a></li>
+                                <li><a href="blog-post.html" title="Blog Post">Post</a>
+                                	<ul>
+                                        <li><a href="left-blog-post.html" title="Left Column Blog Post">Left Column Post</a></li>
+                                    <li><a href="blog-post.html" title="Right Column Blog Post">Right Column Post</a></li>
+                                    </ul>
+                                </li>
+                            </ul>-->
+                        </li>
+                        <li><a href="contact-me.html" title="Contact Me">Contact Me</a></li>
+                    
+                    </ul>
+                
+                </div>
+                <!-- End navigation -->
+                
+			</div>
+        
+        </div>
+        <!-- End navigation area -->
+        <div class="clear"></div>
+        <!-- Start Social & Logo area -->
+        <div id="header_small">
+        	<!-- Start Social area -->
+        	<div class="social">
+            	
+                <ul>
+                <li><a href="https://plus.google.com/100583380599913087854/about" class="social-google"></a></li>
+                <li><a href="https://www.facebook.com/abhinav.biswas" class="social-facebook"></a></li>
+                <li><a href="https://twitter.com/Abhinav_Biswas" class="social-twitter"></a></li>
+                <li><a href="http://in.linkedin.com/in/abhinavbiswas" class="social-linkedin"></a></li>
+                <li><a href="images/QRCode.png" target="_blank" class="social-forrst"></a></li>
+                <li><a href="http://www.quora.com/Abhinav-Biswas" class="social-dribbble"></a></li>
+                </ul>
+                
+            </div>
+            <!-- End Socialarea -->
+            
+            <!-- Start Logo area -->
+            <div id="logo">
+              <a href="http://abhinav-biswas.appspot.com" title="Abhinav Biswas"><b>Abhinav Biswas</b></a>
+            </div>
+            <!-- End Logo area -->
+        
+        </div>
+        <!-- End Social & Logo area -->
+
+</div>
+
+<div id="main">
+
+    <!-- Start Slider Wrapping -->
+    <div id="sliderwrap">
+		
+        <!-- Start Slider -->
+        <div id="slider" class="nivoSlider">
+            <img src="images/slider-banners/slider01.jpg" alt=""/>
+            <img src="images/slider-banners/slider02.jpg" alt=""/>
+            <img src="images/slider-banners/slider03.jpg" alt=""/>
+        </div>
+        <!-- End Slider -->
+        <!-- Start Slider HTML Captions -->
+        <div id="htmlcaption" class="nivo-html-caption">
+            <strong>This</strong> is an example of a <em>HTML</em> caption with <a href="#">a link</a>.
+        </div>
+        <!-- End Slider HTML Captions -->
+    
+    </div>
+    <!-- End Slider Wrapping -->
+    <!-- Start H1 Title -->
+    <div class="titles">
+    
+    	<h1>"Hi, Welcome to the World of Abhinav - The Prince Palace..."</h1>
+        
+        <span></span>
+    
+    </div>
+    <!-- End H1 Title -->
+    <!-- Start Main Body Wrap -->
+    <div id="main-wrap">
+    
+    	<!-- Start Featured Boxes -->
+        <div class="boxes-third boxes-first">
+        
+        	<div class="boxes-padding">
+            
+            	<div class="bti">
+                	<div class="featured-images"><img src="images/responsive-icon.jpg" width="45" height="45" alt="Responsive" style="padding:5px"></div>
+                	<div class="featured-titles">Current Work Profile</div>
+                </div>
+                <div class="featured-text"><b>Network Administrator,</b><br>Responsible for maintaining <br>Windows 2008 Server Infrastructure with Cisco Switches & Windows 7 Workstations in an Active Directory Domain for ECIL Mumbai branch.</div>
+            
+            </div>
+            
+            <span class="box-arrow"></span>
+        
+        </div>
+        
+        <div class="boxes-third">
+        
+        	<div class="boxes-padding">
+            
+            	<div class="bti">
+                    <div class="featured-images"><img src="images/cleansleek-icon.jpg" width="60" height="53" alt="Responsive"></div>
+                    <div class="featured-titles">Skills & Expertise</div>
+                </div>
+                <div class="featured-text">
+                C++, Java 5.0, Python(Beginner)<br>
+                HTML 5, JavaScript, Servlets & JSP<br>
+                Oracle 10g, IBM DB2 9.1 <br>
+                Eclipse 3.6 Helios, Oracle VM VirtualBox<br>
+                Google App Engine, Google Web Toolkit<br>
+                Facebook Social Graph API
+</div>
+            
+            </div>
+            
+            <span class="box-arrow"></span>
+        
+        </div>
+        
+        <div class="boxes-third boxes-last">
+        
+        	<div class="boxes-padding">
+            	
+                <div class="bti">
+                    <div class="featured-images"><img src="images/testimonial_icon.png" width="54" height="53" alt="Responsive"></div>
+                    <a href="http://abhinav-downloads.appspot.com/CV.pdf" target="_blank" ><div class="featured-titles">Curriculum Vitae</div></a>
+                </div>
+                <div class="featured-text">"If I had more time, I would have written the summary of my resume here."<br> 
+                <br></div>
+            
+            </div>
+            
+            <span class="box-arrow"></span>
+        
+        </div>
+        <!-- End Featured Boxes -->
+        
+        <!-- Start Latest Project titles -->
+        <div class="boxes-full">
+        
+        	<div class="boxes-padding fullpadding"><h1>"Things I got my hands dirty with - My Projects..."</h1></div>
+            
+            <span class="box-arrow"></span>
+        
+        </div>
+        <!-- End Latest Project titles -->
+        
+        <!-- Start Latest 3 Projects -->
+		<div class="boxes-third boxes-first">
+        
+       	  <div class="latestthree">
+            
+           	<div class="title">
+                Virtual Trial Room
+                <span class="titlearrow"></span>
+                </div>
+                <div class="latestthreeimage"><a href="images/latest-projects/larger-images/vtr.png" rel="prettyPhoto" title="An interactive Virtual mirror (using Webcam) portraying the augmented view of the user in a dynamic Live Video mode with virtual super-imposed clothes. The vClothing concept empowers the user to try wearing a virtual cloth and have an augmented view of himself before he can actually decide to buy the cloth, after a computerized visualization whether it will really suit him or not."><img src="images/latest-projects/vtr.jpg" alt="Virtual Trial Room" width="305" height="132" border="0"/></a></div>
+            <div class="text">
+                The Augmented Reality Technique which creates an interactive Virtual mirror, portraying the augmented view of the user with virtual 				super-imposed clothes.
+                
+				<br><br>JavaCV, OpenCV 2.3.1, <br>
+				Swing (Java 1.6),<br>
+				Face Detection, Motion Tracking.<br><br>
+                <h8>Downloads: </h8><a href="http://abhinav-downloads.appspot.com/Projects/Abhinav_VTR.pptx" target="_blank" >Presentation</a>, <a href="http://abhinav-downloads.appspot.com/Projects/Abhinav_VTR_Documentation.pdf" target="_blank" >Report</a>
+		
+                <span class="textarrow"></span>
+                </div>
+            
+          </div>
+        
+        </div>
+        
+		<div class="boxes-third">
+        
+       	  <div class="latestthree">
+            
+           	<div class="title">
+                IMS Based Explosive Detector
+                <span class="titlearrow"></span>
+                </div>
+                <div class="latestthreeimage"><a href="images/latest-projects/larger-images/ims.jpg" rel="prettyPhoto" title="An IMS based Explosive detector can analyze explosive ions by computing the drift time of the ions based on the peak value of the collected ADC sample data and comparing it with the available library data. The IMS application was developed using Qt 4.5 which was ported to the ARM board running embedded Linux."><img src="images/latest-projects/ims.jpg" alt="IMS Based Explosive Detector" width="305" height="132" border="0"/></a></div>
+            <div class="text">
+          	The objective was to develop an ARM based Embedded System which can identify ions of explosives like RDX, TNT, using Ion Mobility Spectrometry.
+                
+                <br><br>
+                Atmel ARM9 Microcontroller,<br>
+                CMOS ADC by Texas Instruments,<br>
+                ARM Development Studio DS 5,<br>
+				Qt 4.5.0, Qwt 5.2.1
+                <br><br>
+                <h8>Downloads: </h8><a href="http://abhinav-downloads.appspot.com/Projects/Abhinav_IMS.pptx" target="_blank" >Presentation</a>, <a href="http://abhinav-downloads.appspot.com/Projects/Abhinav_IMS_Project_Report.pdf" target="_blank" >Report</a>
+
+
+                <span class="textarrow"></span>
+                </div>
+            
+          </div>
+        
+        </div>
+        
+        <div class="boxes-third boxes-last">
+        
+       	  <div class="latestthree">
+            
+           	<div class="title">
+                Weather Online
+                <span class="titlearrow"></span>
+                </div>
+                <div class="latestthreeimage"><a href="images/latest-projects/larger-images/weather.jpg" rel="prettyPhoto" title="                An online portal to get the weather information of a place (input by user) and its global position (using Geo-Coding API) on Google map."><img src="images/latest-projects/weather.jpg" alt="Weather Online" width="305" height="132" border="0"/></a></div>
+            <div class="text">
+                An online portal to get the weather information of a place (input by user) and its global position (using Geo-Coding API) on Google map.
+
+				<br><br>
+                Servlets (J2EE), Google Maps API,<br>
+				Powered by Yahoo Weather feeds (RSS)<br>
+                Cloud Hosting: Google Appengine<br>
+                <br>
+                <a href="http://abhinav-the-prince.appspot.com/weather.html" target="_blank" >Live Sample App</a><br>
+                <h8>Download: </h8><a href="http://abhinav-downloads.appspot.com/Projects/WeatherOnline.zip" target="_blank" >Source Code</a>
+
+                <span class="textarrow"></span>
+                </div>
+            
+          </div>
+        
+        </div>
+        <!-- End Latest 3 Projects -->
+    
+    </div>
+    <!-- End Main Body Wrap -->
+
+</div>
+<!-- Start Footer -->
+<div id="footer">
+	<!-- Start Footer Top -->
+	<div id="footertop">
+    
+    	<div class="footerwrap">
+    		<!-- Start Latest Tweets -->
+            <div id="latest-tweets">
+                <a href="https://twitter.com/Abhinav_Biswas" target="_blank"><div id="twittertitle">Tweets</div></a>
+                <div id="twitterbody">
+                
+                <a class="twitter-timeline" href="https://twitter.com/Abhinav_Biswas" data-widget-id="348042726551453697" height="260" data-chrome="noheader transparent noscrollbar">Tweets by @Abhinav_Biswas</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                </div>
+            </div>
+            <!-- End Latest Tweets -->
+    		<!-- Start Useful Links -->
+            <div id="useful_links">
+                <div id="usefultitle">Blog Posts
+                <a href="http://abhinavtheprince.blogspot.com/feeds/posts/default" target="_blank">
+                <img src="images/rss.png" height="20" style="padding-left:50%"></a>
+                </div>
+                <div id="usefulbody">
+                <script src="http://feeds.feedburner.com/AbhinavThePrince?format=sigpro" type="text/javascript" ></script><noscript><p>Subscribe to RSS headline updates from: <a href="http://feeds.feedburner.com/AbhinavThePrince"></a><br />Powered by FeedBurner</p> </noscript>
+                </div>
+            </div>
+            <!-- End Useful Links -->
+    		<!-- Start Testimonials -->
+            <div id="latest-testimonial">
+                <a href="testimonials.html"> <div id="testimonialtitle">Testimonials</div></a>
+                <div id="testimonialbody">
+                	<!-- Starting simple slider -->
+                    <a href="testimonials.html"><div id="simpleslider">
+                            <!-- Slide 1 -->
+                            <div class="current">
+                                <h8>IBM Blue Scholar</h8>
+                                <p><img src="images/latest-projects/smaller-images/IBM-Blue-Scholar-001.jpg" height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 1 -->
+                            <!-- Slide 2 -->
+                            <div>
+                                <h8>Best Student of the Year</h8>
+                                <p><img src="images/latest-projects/smaller-images/Best-Student-001.jpg" height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 2 -->
+                            <!-- Slide 3 -->
+                            <div>
+                                <h8>Indian Oil Scholarship</h8>
+                                <p><img src="images/latest-projects/smaller-images/Indian-Oil-Scholarship-001.jpg"  height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 3 -->
+                            <!-- Slide 4 -->
+                            <div>
+                                <h8>IBM Certified Academic Associate</h8>
+                                <p><img src="images/latest-projects/smaller-images/IBM-DB2-001.jpg"  height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 4 -->
+                            <!-- Slide 5 -->
+                            <div>
+                                <h8>IBM Certified Solution Developer</h8>
+                                <p><img src="images/latest-projects/smaller-images/IBM-WID-001.jpg"  height="110" style="padding-top:5%"> </p>
+                            </div>
+                            <!-- End Slide 5 -->
+                    </div></a>
+                    <!-- Ending simple slider -->
+                	<div class="speachlower"></div>
+                </div>
+            </div>
+            <!-- End Latest Testimonials -->
+    	</div>
+    
+	</div>
+	<!-- End Footer Top -->
+    <div class="clear"></div>
+    <!-- Start Footer Bottom -->
+    <div id="footerbottom">
+    
+    	<div class="footerwrap">
+        
+        	<!-- Start Copyright Div -->
+            <div id="copyright">&copy; <b>Abhinav Biswas</b> - All rights reserved ! </div>
+            
+            <!-- End Copyright Div -->
+
+            <!-- Start Social area -->
+            <div class="socialfooter">
+                
+                <ul>
+                <li><a href="https://plus.google.com/100583380599913087854/about" class="social-google"></a></li>
+                <li><a href="https://www.facebook.com/abhinav.biswas" class="social-facebook"></a></li>
+                <li><a href="https://twitter.com/Abhinav_Biswas" class="social-twitter"></a></li>
+                <li><a href="http://in.linkedin.com/in/abhinavbiswas" class="social-linkedin"></a></li>
+                <li><a href="images/QRCode.png" target="_blank" class="social-forrst"></a></li>
+                <li><a href="http://www.quora.com/Abhinav-Biswas" class="social-dribbble"></a></li>
+                </ul>
+                
+            </div>
+            <!-- End Socialarea -->
+        
+        </div>
+    
+    </div>
+    <!-- End Footer Bottom -->
+</div>
+<!-- End Footer -->
+<!-- Start Scroll To Top Div -->
+<div id="scrolltab"></div>
+<!-- End Scroll To Top Div -->
+</body>
+</html>
