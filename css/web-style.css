@@ -7,17 +7,23 @@ body{
 	background-repeat: repeat;
 }
 
-h1, h2, h3, h4, h5, h6, h8{
+h1, h2, h3, h5, h6, h8{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	padding:0px;
 	margin:0px;
-	color: #606;
+	color: #0C3;
 }
 
 h1,h2{
 	font-size:20pt;
 }
 
+h4{
+	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+	color: #00F;
+}
 
 h7{
 	font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
@@ -904,6 +910,7 @@ hr{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	font-size:10pt;
 	color:#7e7e7e;
+	float:left;
 }
 
 #usefulbody ul li a:hover{
@@ -917,6 +924,7 @@ hr{
 	font-size:10pt;
 	color:#00F;
 	text-decoration:none;
+	float: left;
 }
 
 #latest-testimonial{
@@ -1281,7 +1289,6 @@ a:hover.blackbutton{
 }
 
 .split3{
-	width:30.1%;
 	padding:10px 2% 10px 1%;
 	float:left;
 	text-align:left;
@@ -1664,12 +1671,12 @@ div.tab_contents_active {
 }
 
 .accordiontitle{
-	width:94%;
+	width:98%;
 	float:left;
-	padding:3%;
-	color:#807f7f;
+	padding:1%;
+	color:#00F;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size:20pt;
 	border: 1px solid #DDD;
 	cursor:pointer;
 	background-color: #E6E6E6;
@@ -1679,9 +1686,9 @@ div.tab_contents_active {
 }
 
 .accordiontitle a, .accordiontitle a:visited, .accordiontitle a:hover{
-	color:#807f7f;
+	color:#00F;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	font-size:20pt;
 	text-decoration:none;
 }
 
@@ -1690,17 +1697,22 @@ div.tab_contents_active {
 }
 
 .accordioncontent{
-	width:94%;
+	width:98%;
 	float:left;
-	padding:3%;
-	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
-	font-size:10pt;
+	padding:1%;
+	font-size:16pt;
 	color:#666666;
 	border-left: 1px solid #DDD;
 	border-right: 1px solid #DDD;
 	border-bottom: 1px solid #DDD;
 }
 
+#p{
+	width:98%;
+	float:left;
+	font-size:12pt;
+	color:#666666;
+}
 /**********************************************/
 /************* Portfolio Section **************/
 /**********************************************/
