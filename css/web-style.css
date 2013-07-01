@@ -7,18 +7,18 @@ body{
 	background-repeat: repeat;
 }
 
-h1, h2, h3, h5, h6, h8{
+h1, h2, h3, h5, h6{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	padding:0px;
 	margin:0px;
-	color: #0C3;
+	color: #030;
 }
 
 h1,h2{
 	font-size:20pt;
 }
 
-h4{
+h4, h8{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	padding:0px;
 	margin:0px;
