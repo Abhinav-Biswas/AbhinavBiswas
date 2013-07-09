@@ -39,7 +39,7 @@ $(document).ready(function(){
 		var el = $(this);
 		$("<option />", {
 			"value"   : el.attr("href"),
-			"text"    : el.text()
+			"text"    : el.attr("title")
 		}).appendTo("#navi select");
 	});
 		
