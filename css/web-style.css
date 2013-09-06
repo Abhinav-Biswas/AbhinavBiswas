@@ -343,8 +343,8 @@ hr{
 	position:absolute;
 	display: none;
 	z-index: 2000;
-	padding-top:13px;
 	margin-left:-13px;
+	margin-top:13px;
 	background-color:white;
 }
 
@@ -355,6 +355,7 @@ hr{
 	border-bottom: 1px solid #d5d5d5 !important;
 	border-left: 1px solid #d5d5d5 !important;
 	width:120px;
+	border-top: 1px solid #d5d5d5 !important;
 }
 
 #navi ul li ul li ul{
