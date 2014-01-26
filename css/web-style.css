@@ -8,7 +8,7 @@ body{
 }
 
 h1, h2, h3, h5, h6{
-	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
+	font-family: serif;
 	padding:0px;
 	margin:0px;
 	color: #030;
@@ -18,11 +18,19 @@ h1,h2{
 	font-size:20pt;
 }
 
-h4, h8{
+h4{
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	padding:0px;
 	margin:0px;
 	color: #00F;
+}
+
+h8{
+	font-family: Georgia, serif;
+	padding:0px;
+	margin:0px;
+	color: #00F;
+	font-size:14pt;
 }
 
 h7{
@@ -34,6 +42,11 @@ h7{
 
 h7{
 	font-size:20pt;
+}
+
+h9{
+	font-size:11pt;
+	color:#666;
 }
 
 p{
@@ -564,6 +577,11 @@ hr{
 	margin:0px auto;
 }
 
+#main-wrap2{
+	max-width:1000px;
+	float:none;
+	margin:0px auto;
+}
 /**********************************************/
 /*************** Boxes Section ****************/
 /**********************************************/
@@ -1572,10 +1590,11 @@ li.red-cross{
 }
 .tabs_container ul.tabs {
 	list-style: none;
-	height: 27px;
+	height: 35px;
 	margin: 0;
 	border-bottom: 1px solid #DDD;
 	padding:0px;
+	position:relative;
 }
 .tabs_container ul.tabs li {
 	float: left;
@@ -1701,7 +1720,7 @@ div.tab_contents_active {
 	width:98%;
 	float:left;
 	padding:1%;
-	font-size:16pt;
+	font-size:11pt;
 	color:#666666;
 	border-left: 1px solid #DDD;
 	border-right: 1px solid #DDD;
@@ -1711,7 +1730,7 @@ div.tab_contents_active {
 #p{
 	width:98%;
 	float:left;
-	font-size:12pt;
+	font-size:10pt;
 	color:#666666;
 }
 /**********************************************/
@@ -2414,6 +2433,14 @@ textarea.contacttextarea{
 }
 
 #map_canvas{
+	width:96%;
+	margin:2%;
+	float:left;
+	height:165px;
+	background-color:#CCC;
+}
+
+#map_canvas2{
 	width:96%;
 	margin:2%;
 	float:left;
