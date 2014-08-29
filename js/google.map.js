@@ -23,7 +23,7 @@ function initialize() {
 function loadScript() {
   var script = document.createElement("script");
   script.type = "text/javascript";
-  script.src = "http://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&sensor=TRUE_OR_FALSE&callback=initialize";
+  script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyAnC82JVmuxsAcYW457I5HX7IYJjkB1o7s&sensor=TRUE_OR_FALSE&callback=initialize";
   document.body.appendChild(script);
 }
 window.onload = loadScript;
