@@ -54,6 +54,20 @@
   ga('send', 'pageview');
 
 </script>
+    
+<script>
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        if($(window).scrollTop() >= 75){
+            $('#conteactinfo').html('<div id="logo2"><a href="http://abhinav-biswas.appspot.com" title="Abhinav Biswas"><b>Abhinav Biswas</b></a></div>');
+        }
+        else {
+            $('#conteactinfo').html('<strong>Email : </strong> abhinavbiswas@ecil.gov.in  <br>  <strong>Phone :</strong> (+91) 9433802599');
+        }
+    })
+})
+</script>    
+    
 </head>
 
 <body>
@@ -67,6 +81,7 @@
                 <div id="conteactinfo"><strong>Email : </strong> abhinavbiswas@ecil.gov.in  <br>  <strong>Phone :</strong> (+91) 9433802599</div>
                 <!-- End contact info area -->
                 <!-- Start navigation -->
+                
                 <div id="navi">
                 
                     <ul>
@@ -241,7 +256,7 @@
                 </div>
                 <div class="featured-text">
                 Convent-educated, Student of the Year,<br>Army School Topper-Class XII-CBSE,<br>National Merit Scholarships from<br>Ministry of HRD - CBSE & IOCL,<br> IBM Blue Scholar...
-                <br><br><h9><a href="CV.html style="text-decoration:none">Complete CV</a></h9>
+                <br><br><h9><a href="CV.html" style="text-decoration:none">Complete CV</a></h9>
                 </div>
             
             </div>
@@ -250,6 +265,10 @@
         
         </div>
         <!-- End Featured Boxes -->
+        
+
+        
+        <hr>
         
         <!-- Start Latest Project titles -->
         <div class="boxes-full">
