@@ -77,7 +77,9 @@ hr{
 #header_small{
 	max-width:1000px;
 	float:none;
-	margin:60px auto 0px auto;
+/*	margin:60px auto 0px auto;*/
+    margin-right: auto;
+    margin-left: auto;
 }
 
 #logo{

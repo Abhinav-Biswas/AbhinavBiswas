@@ -17,7 +17,15 @@
 <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
 <!-- <script src="js/twitter.js"></script>    -->
 <script src="js/custom.js"></script>   
-
+   
+ 
+<script>
+    $(document).ready(function(){
+        var navHeight = $('#navigation').height();
+        $('#header_small').css('margin-top', navHeight+16+'px');
+});
+</script> 
+    
 <script>
 	//// Start Simple Sliders ////
 	$(function() {
@@ -56,13 +64,21 @@
 </script>
     
 <script>
+    
     $(document).ready(function(){
     $(window).scroll(function(){
-        if($(window).scrollTop() >= 75){
+        var navHeight = $('#navigation').height();
+        if($(window).scrollTop() >= navHeight+16){
             $('#conteactinfo').html('<div id="logo2"><a href="http://abhinav-biswas.appspot.com" title="Abhinav Biswas"><b>Abhinav Biswas</b></a></div>');
+            
+            if($(window).width() <= 800){
+                $('#navi').css('margin-top', 20+'px');
+            }
+            
         }
         else {
             $('#conteactinfo').html('<strong>Email : </strong> abhinavbiswas@ecil.gov.in  <br>  <strong>Phone :</strong> (+91) 9433802599');
+            $('#navi').css('margin-top', 'auto');
         }
     })
 })
