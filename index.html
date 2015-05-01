@@ -19,7 +19,26 @@
 <script src="js/jquery.isotope.min.js"></script>     
 <script src="js/custom.js"></script>   
 
- 
+ <script>   
+    $(document).ready(function(){
+    $(window).scroll(function(){
+        var navHeight = $('#navigation').height();
+        if($(window).scrollTop() >= navHeight+16){
+            $('#conteactinfo').html('<div id="logo2"><a href="http://abhinav-biswas.appspot.com" title="Abhinav Biswas"><b>Abhinav Biswas</b></a></div>');
+            
+            if($(window).width() <= 800){
+                $('#navi').css('margin-top', 20+'px');
+            }
+            
+        }
+        else {
+            $('#conteactinfo').html('<strong>Email : </strong> abhinavbiswas@ecil.gov.in  <br>  <strong>Phone :</strong> (+91) 9433802599');
+            $('#navi').css('margin-top', 'auto');
+        }
+    })
+})
+</script>   
+    
 <script>
     $(document).ready(function(){
         var navHeight = $('#navigation').height();
@@ -47,7 +66,7 @@
 	}
 	//// End Simple Sliders //// 
 </script> 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
   $(document).ready(function(){
     $("a[rel^='prettyPhoto']").prettyPhoto();
   });
@@ -64,25 +83,6 @@
 
 </script>
     
-<script>   
-    $(document).ready(function(){
-    $(window).scroll(function(){
-        var navHeight = $('#navigation').height();
-        if($(window).scrollTop() >= navHeight+16){
-            $('#conteactinfo').html('<div id="logo2"><a href="http://abhinav-biswas.appspot.com" title="Abhinav Biswas"><b>Abhinav Biswas</b></a></div>');
-            
-            if($(window).width() <= 800){
-                $('#navi').css('margin-top', 20+'px');
-            }
-            
-        }
-        else {
-            $('#conteactinfo').html('<strong>Email : </strong> abhinavbiswas@ecil.gov.in  <br>  <strong>Phone :</strong> (+91) 9433802599');
-            $('#navi').css('margin-top', 'auto');
-        }
-    })
-})
-</script>   
     
     
 <!--////Start Testimonials////-->
@@ -90,7 +90,7 @@
 <script>
 $(document).ready(function(){
 
-    var $container = $('#portfolio-container')
+    var $container = $('#portfolio-container');
     // initialize Isotope
         $container.isotope({
             // options...
@@ -127,7 +127,20 @@ $(document).ready(function(){
 
     
 <script>
-
+jQuery(document).ready(function() {    
+    var $root = $('html, body');    
+    $('a[href*=#]').click(function(e) {
+        var href = $.attr(this, 'href');
+        e.preventDefault();
+        $('a').closest("li").removeClass("active");
+        $(this).closest("li").addClass("active");
+        var stop = $( $(this).attr('href') ).offset().top - 60;
+        $root.animate({
+            scrollTop: stop + 'px'}, 500, function () {
+        window.location.hash = href;
+        });
+    });
+});
 </script>    
     
 <!--///End Testimonials///    -->
@@ -175,7 +188,8 @@ $(document).ready(function(){
                                 
                             </ul>
                         </li>
-                        <li><a href="#testimons" title="Testimonials">Testimonials</a>
+                        <li><a id="testimonsId" href="#testimons" title="Testimonials">Testimonials</a>
+<!--                            <div class="testimonsId"></div>-->
                         	<!--<ul>
                             	<li><a href="portfolio-2-column.html" title="2 Column Filtered Portfolio">2 Columns</a></li>
                                 <li><a href="portfolio-3-column.html" title="3 Column Filtered Portfolio">3 Columns</a></li>
@@ -216,7 +230,7 @@ $(document).ready(function(){
                 <li><a href="https://www.facebook.com/abhinav.biswas" class="social-facebook" target="_blank"></a></li>
                 <li><a href="https://twitter.com/Abhinav_Biswas" class="social-twitter" target="_blank"></a></li>
                 <li><a href="http://in.linkedin.com/in/abhinavbiswas" class="social-linkedin" target="_blank"></a></li>
-                <li><a href="images/QRCode.png" target="_blank" class="social-forrst" target="_blank"></a></li>
+                <li><a href="images/QRCode.png" class="social-forrst" target="_blank"></a></li>
                 <li><a href="http://www.quora.com/Abhinav-Biswas" class="social-dribbble" target="_blank"></a></li>
                 </ul>
                 
@@ -354,7 +368,7 @@ $(document).ready(function(){
                 Virtual Trial Room
                 <span class="titlearrow"></span>
                 </div>
-                <div class="latestthreeimage"><a href="images/latest-projects/larger-images/vtr.png" rel="prettyPhoto" title="An interactive Virtual mirror (using Webcam) portraying the augmented view of the user in a dynamic Live Video mode with virtual super-imposed clothes. The vClothing concept empowers the user to try wearing a virtual cloth and have an augmented view of himself before he can actually decide to buy the cloth, after a computerized visualization whether it will really suit him or not."><img src="images/latest-projects/vtr.jpg" alt="Virtual Trial Room" width="305" height="132" border="0"/></a></div>
+                <div class="latestthreeimage"><a href="images/latest-projects/larger-images/vtr.png" rel="prettyPhoto" title="An interactive Virtual mirror (using Webcam) portraying the augmented view of the user in a dynamic Live Video mode with virtual super-imposed clothes. The vClothing concept empowers the user to try wearing a virtual cloth and have an augmented view of himself before he can actually decide to buy the cloth, after a computerized visualization whether it will really suit him or not."><img src="images/latest-projects/vtr.jpg" alt="Virtual Trial Room" width="305" height="132"></a></div>
             <div class="text">
                 The Augmented Reality Technique which creates an interactive Virtual mirror, portraying the augmented view of the user with virtual 				super-imposed clothes.
                 
@@ -433,12 +447,10 @@ $(document).ready(function(){
     
    
 <!--//Start Testimonials//-->
-<a name="testimons"></a>
-<!--<div id="testimons"></div>    -->
-<div id="header"></div>  
-<div id="main">
+<!--<div id="newPage" style="margin-top:60px"></div>    -->
+<div id="main" style="margin-top:60px">
     <!-- Start H1 Title -->
-    <div class="titlesnormal">
+    <div class="titlesnormal" id="testimons">
     
     	<h1>"The hard earned documents - His Testimonials"</h1>
         
@@ -457,7 +469,7 @@ $(document).ready(function(){
                 <!-- Start None Split Section -->
             	<div class="splitnone">
                 
-                    <div id="portfolio-filter-choice"><a href="testimonials-2.html" title="2 Column View"><img src="images/2column.png" alt="2 Column View" width="25" height="25"></a> <a href="testimonials-3.html" title="3 Column View"><img src="images/3column.png" alt="3 Column View" width="25" height="25"></a> <a href="testimonials.html" title="4 Column View"><img src="images/4column.png" alt="4 Column Portfolio" width="25" height="25"></a></div>
+<!--                    <div id="portfolio-filter-choice"><a href="testimonials-2.html" title="2 Column View"><img src="images/2column.png" alt="2 Column View" width="25" height="25"></a> <a href="testimonials-3.html" title="3 Column View"><img src="images/3column.png" alt="3 Column View" width="25" height="25"></a> <a href="testimonials.html" title="4 Column View"><img src="images/4column.png" alt="4 Column Portfolio" width="25" height="25"></a></div>-->
                 
                 	<!-- Start Portfolio Filter -->
                	  <div id="portfolio-filter">
@@ -812,7 +824,7 @@ $(document).ready(function(){
                 <li><a href="https://www.facebook.com/abhinav.biswas" class="social-facebook" target="_blank"></a></li>
                 <li><a href="https://twitter.com/Abhinav_Biswas" class="social-twitter" target="_blank"></a></li>
                 <li><a href="http://in.linkedin.com/in/abhinavbiswas" class="social-linkedin" target="_blank"></a></li>
-                <li><a href="images/QRCode.png" target="_blank" class="social-forrst" target="_blank"></a></li>
+                <li><a href="images/QRCode.png" class="social-forrst" target="_blank"></a></li>
                 <li><a href="http://www.quora.com/Abhinav-Biswas" class="social-dribbble" target="_blank"></a></li>
                 </ul>
                 

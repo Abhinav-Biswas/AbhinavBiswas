@@ -7,7 +7,7 @@ body{
 	background-repeat: repeat;
 }
 
-h1, h2, h3, h5, h6{
+h3, h5, h6{
 	font-family: serif;
 	padding:0px;
 	margin:0px;
@@ -16,6 +16,10 @@ h1, h2, h3, h5, h6{
 
 h1,h2{
 	font-size:20pt;
+    font-family: serif;
+	padding:0px;
+	margin:0px;
+	color: #030;
 }
 
 h4{
@@ -1796,7 +1800,7 @@ div.tab_contents_active {
 
 #portfolio-filter ul li{
 	list-style-type:none;
-	float@left;
+	float:left;
 	display:inline-block;
 	font-family: 'HelveticaLTStdRoman',Arial, Helvetica, sans-serif;
 	font-size:10pt;
@@ -3213,4 +3217,9 @@ textarea.contacttextarea{
 	color:#999;
 	font-family: 'BebasNeueRegular',Arial, Helvetica, sans-serif;
 	font-size:15pt;
+}
+
+
+.active { 
+    background-color:#EDEDED;
 }
