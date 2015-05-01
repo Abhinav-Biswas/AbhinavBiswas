@@ -598,14 +598,14 @@ hr{
 /*************** Main Section *****************/
 /**********************************************/
 
-#main{
+.main{
 	width:100%;
 	float:left;
 	min-height:100px;
 	margin-top:-60px;
 }
 
-#main-wrap{
+.main-wrap{
 	max-width:1000px;
 	float:none;
 	margin:0px auto;
