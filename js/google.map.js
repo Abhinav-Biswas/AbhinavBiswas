@@ -3,14 +3,14 @@ function initialize() {
     var myLatlng = new google.maps.LatLng(22.768072, 88.398283);
     var myLatlng2 = new google.maps.LatLng(17.469111, 78.57688);
     var myOptions = {
-        zoom: 12,
+        zoom: 13,
         center: myLatlng,
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: google.maps.MapTypeId.HYBRID
     }
     var myOptions2 = {
-        zoom: 14,
+        zoom: 15,
         center: myLatlng2,
-        mapTypeId: google.maps.MapTypeId.TERRAIN
+        mapTypeId: google.maps.MapTypeId.HYBRID
     }
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
     var map2 = new google.maps.Map(document.getElementById("map_canvas2"), myOptions2);
