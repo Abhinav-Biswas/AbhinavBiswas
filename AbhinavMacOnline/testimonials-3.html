@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Testimonials</title>
+    <meta name="description" content="Abhinav Biswas - Testimonials" />
+    <meta name="keywords" content="Abhinav Biswas - Testimonials" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="bookmark icon" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nivo.slider.js"></script>
+    <script src="js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <!-- <script src="js/twitter.js"></script>    -->
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            var $container = $('#portfolio-container')
+                // initialize Isotope
+            $container.isotope({
+                // options...
+                resizable: false, // disable normal resizing
+                layoutMode: 'fitRows',
+                itemSelector: '.element3',
+                animationEngine: 'best-available',
+
+                // set columnWidth to a percentage of container width
+                masonry: {
+                    columnWidth: $container.width() / 5
+                }
+            });
+
+            // update columnWidth on window resize
+            $(window).smartresize(function () {
+                $container.isotope({
+                    // update columnWidth to a percentage of container width
+                    masonry: {
+                        columnWidth: $container.width() / 5
+                    }
+                });
+            });
+            $container.imagesLoaded(function () {
+
+                $container.isotope({
+                    // options...
+                });
+            });
+
+            $('#portfolio-filter a').click(function () {
+                var selector = $(this).attr('data-filter');
+                $container.isotope({
+                    filter: selector
+                });
+                return false;
+            });
+        });
+    </script>
+    <script type="text/javascript" charset="utf-8">
+        $(document).ready(function () {
+            $("a[rel^='prettyPhoto']").prettyPhoto();
+        });
+    </script>
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-44056113-1', 'abhinav-biswas.appspot.com');
+        ga('send', 'pageview');
+    </script>
+</head>
+
+<body>
+
+
+
+    <div id="main">
+        <!-- Start H1 Title -->
+
+        <div class="titlesnormal">
+
+            <h1>A Portfolio of his Certificates...</h1>
+
+            <span></span>
+
+        </div>
+
+        <!-- End H1 Title -->
+        <!-- Start Main Body Wrap -->
+        <div id="main-wrap">
+
+            <!-- Start Box -->
+            <div class="boxes-full">
+
+                <div class="boxes-padding fullpadding">
+
+                    <!-- Start None Split Section -->
+                    <div class="splitnone" style="padding:5px 0px;">
+
+
+                        <!-- Start Portfolio Filter -->
+                        <div id="portfolio-filter" style="padding:0px;height:22px">
+
+                            <ul>
+
+                                <li><strong><h3>Apply Filter: </h3></strong>
+                                </li>
+                                <li><a href="#portfolio-filter" title="All" class="orangebutton smallrectange" data-filter="*">Show all</a>
+                                </li>
+                                <li><a href="#portfolio-filter" title="Certifications" class="orangebutton smallrectange" data-filter=".certifications">Certifications</a>
+                                </li>
+                                <li><a href="#portfolio-filter" title="Achievements" class="orangebutton smallrectange" data-filter=".achievements">Achievements</a>
+                                </li>
+                                <li><a href="#portfolio-filter" title="Academics" class="orangebutton smallrectange" data-filter=".academics">Academics</a>
+                                </li>
+
+
+                            </ul>
+
+                        </div>
+                        <!-- End Portfolio Filter -->
+
+                    </div>
+                    <!-- End None Split Section -->
+
+                </div>
+
+                <span class="box-arrow"> </span>
+
+            </div>
+            <!-- End Box -->
+
+            <!-- Start Box -->
+            <div class="boxes-full">
+
+                <div class="boxes-padding fullpadding">
+
+                    <!-- Start None Split Section -->
+                    <div class="splitnone">
+
+                        <div id="portfolio-container">
+
+                            <!-- Start 4 column portfolio -->
+
+                            <div class="element3 academics">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">CS-169.1X, SAAS<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/SAAS-EdX-001.jpg" rel="prettyPhoto" title="University of California, Berkeley"><img src="images/latest-projects/SAAS-EdX-001.jpg" alt="CS-169.1X, Software As A Service" />
+                                        </a>
+                                    </div>
+                                    <div class="text">University of California, Berkeley<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">IBM Blue Scholar<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/IBM-Blue-Scholar-001.jpg" rel="prettyPhoto" title="IBM Blue Scholar"><img src="images/latest-projects/IBM-Blue-Scholar-001.jpg" alt="IBM Blue Scholar" />
+                                        </a>
+                                    </div>
+                                    <div class="text">IBM Blue Scholar<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 achievements academics">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Best Student Award<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Best-Student-001.jpg" rel="prettyPhoto" title="Best Student of the Year Award"><img src="images/latest-projects/Best-Student-001.jpg" alt="Best Student of the Year" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Best Student of the Year Award<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 achievements">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Merit Scholarship<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Indian-Oil-Scholarship-001.jpg" rel="prettyPhoto" title="Academic Scholarship for B.Tech, worth Rs. 1.2 Lakhs"><img src="images/latest-projects/Indian-Oil-Scholarship-001.jpg" alt="Indian Oil Scholarship" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Indian Oil Scholarship<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Competitive Strategy<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Competitive-Strategy-Coursera-001.jpg" rel="prettyPhoto" title="Munich School of Management, Ludwig Maximilian University, Germany"><img src="images/latest-projects/Competitive-Strategy-Coursera-001.jpg" alt="Competitive Strategy" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Munich School of Management, Germany<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Mithi ConnectXF<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Mithi-ConnectXF-001.jpg" rel="prettyPhoto" title="Mithi Software Technologies Pvt Ltd, Pune"><img src="images/latest-projects/Mithi-ConnectXF-001.jpg" alt="Mithi ConnectXf 3.10" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Mithi Technologies Pvt Ltd<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">IBM Certification DB2 9<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/IBM-DB2-001.jpg" rel="prettyPhoto" title="IBM Certified Academic Associate, Exam Code - 302"><img src="images/latest-projects/IBM-DB2-001.jpg" alt="IBM DB2 9" />
+                                        </a>
+                                    </div>
+                                    <div class="text">IBM Certified Academic Associate<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Machine Learning<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Machine-Learning-Coursera-001.jpg" rel="prettyPhoto" title="Stanford University, USA"><img src="images/latest-projects/Machine-Learning-Coursera-001.jpg" alt="Machine-Learning" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Stanford University, USA<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">IBM Certification RFT 8.0<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/IBM-RFT-001.jpg" rel="prettyPhoto" title="IBM Certified Solutions Designer, Exam Code - 842"><img src="images/latest-projects/IBM-RFT-001.jpg" alt="IBM Certified Solutions Designer" />
+                                        </a>
+                                    </div>
+                                    <div class="text">IBM Certified Solutions Designer<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">BigData & Web Intelligence<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/BigData-Coursera-001.jpg" rel="prettyPhoto" title="TCS Innovation Labs, Indian Institute of Technology, IIT Delhi, India"><img src="images/latest-projects/BigData-Coursera-001.jpg" alt="Machine-Learning" />
+                                        </a>
+                                    </div>
+                                    <div class="text">TCS Innovation Labs, Indian Institute of Technology, IIT Delhi, India<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="element3 certifications">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">IBM Certification WID 6.2<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/IBM-WID-001.jpg" rel="prettyPhoto" title="IBM Certified Solution Developer"><img src="images/latest-projects/IBM-WID-001.jpg" alt="IBM Certified Solution Developer" />
+                                        </a>
+                                    </div>
+                                    <div class="text">IBM Certified Solution Developer<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 academics">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">B.Tech Degree Certificate<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/WBUT-001.jpg" rel="prettyPhoto" title="B.Tech Computer Science & Engineering, West Bengal University of Technology"><img src="images/latest-projects/WBUT-001.jpg" alt="B.Tech Degree Certificate" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Computer Science & Engineering, WBUT<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certification">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">HTML Certification<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/HTML-Training-Certificate-001.jpg" rel="prettyPhoto" title="NIIT HTML Training Certificate"><img src="images/latest-projects/HTML-Training-Certificate-001.jpg" alt="NIIT HTML Training Certificate" />
+                                        </a>
+                                    </div>
+                                    <div class="text">NIIT HTML Training Certificate<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 certification">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">RDBMS Certification<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/RDBMS-Oracle-Training-Certificate-001.jpg" rel="prettyPhoto" title="Oracle RDBMS Certification by IBM"><img src="images/latest-projects/RDBMS-Oracle-Training-Certificate-001.jpg" alt="Lorem ipsum dolor sit amet" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Oracle RDBMS Certification by IBM<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 academics">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Mark Sheet, Class 12<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Class-12-Mark-Sheet-001.jpg" rel="prettyPhoto" title="Class 12 Mark Sheet, Army School Barrackpore"><img src="images/latest-projects/Class-12-Mark-Sheet-001.jpg" alt="Class 12 Mark Sheet, Army School Barrackpore" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Class 12 Mark Sheet, Army School Barrackpore<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="element3 academics">
+
+                                <div class="portfoliowrap">
+
+                                    <div class="title">Mark Sheet, Class 10<span class="titlearrow"></span>
+                                    </div>
+                                    <div class="portfolioimage">
+                                        <a href="images/latest-projects/Class-10-Mark-Sheet-001.jpg" rel="prettyPhoto" title="Class 10 Mark Sheet, Army School Barrackpore"><img src="images/latest-projects/Class-10-Mark-Sheet-001.jpg" alt="Class 10 Mark Sheet, Army School Barrackpore" />
+                                        </a>
+                                    </div>
+                                    <div class="text">Class 10 Mark Sheet, Army School Barrackpore<span class="textarrow"></span>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <!-- End 4 column portfolio -->
+
+                        </div>
+
+                    </div>
+                    <!-- End None Split Section -->
+
+                </div>
+
+                <span class="box-arrow"></span>
+
+            </div>
+            <!-- End Box -->
+
+        </div>
+        <!-- End Main Body Wrap -->
+
+    </div>
+
+</body>
+
+</html>

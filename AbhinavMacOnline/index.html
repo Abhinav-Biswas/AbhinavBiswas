@@ -1,0 +1,1256 @@
+<!DOCTYPE HTML>
+<html lang="en-US" class="no-js">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" media="screen" href="res/css/style.css" />
+    <title>Abhinav's Mac Online</title>
+    <meta name="description" content="Abhinav Biswas - Website" />
+    <meta name="keywords" content="Abhinav Biswas Website" />
+    <link rel="shortcut icon" href="images/favicon.png" />
+    <link rel="bookmark icon" href="images/favicon.png" />
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="grey" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="res/js/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="res/js/modernizr.js"></script>
+    <script type="text/javascript" src="res/js/fix-and-clock.js"></script>
+    <link href="http://cdn.jsdelivr.net/octobadge.github/0.0.1/badge.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/sidetogglemenu.js"></script>
+    <link href="css/sidetogglemenu.css" rel="stylesheet" type="text/css" />
+    <script>
+        jQuery(function () { // on DOM load
+            menu2 = new sidetogglemenu({ // initialize first menu example
+                id: 'togglemenu2',
+                position: 'right',
+                revealamt: -5,
+                pushcontent: false // <- No comma after last option!
+            })
+        })
+    </script>
+</head>
+
+<body>
+
+    <!-- FAIL -->
+    <div id="fail">
+        <div class="fail-browser-logo">
+            <img src="res/img/apple-logo-login.png" alt="Mac OS X" />
+        </div>
+        <div class="fail-browser">
+            <p><strong>I'm sorry to inform you that your browser don't support CSS3 Animations!</strong>
+            </p>
+            <p>This site uses features that <em>require</em> a modern browser - why not try <a href="http://www.mozilla.org/en-US/firefox/fx/" target="_blank" title="Download Firefox">Firefox</a> ?</p>
+        </div>
+    </div>
+
+    <!-- BOOT -->
+    <div id="pageLoading">
+        <div class="loading">
+            <div class="apple-logo"></div>
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <!-- LOGIN -->
+    <div id="pageLogin">
+        <header id="headlogin">
+            <nav id="menu-dx-login">
+                <ul>
+                    <li class="wireless"></li>
+                    <li class="time">
+                        <ul>
+                            <li class="hours"> </li>
+                            <li class="point">:</li>
+                            <li class="min"> </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="new-apple-logo"></div>
+
+        <div class="user-avatar">
+            <div id="avatar">
+                <a href="#hide" class="hide" id="hide"></a>
+                <a href="#show" class="show" id="show"></a>
+                <div id="cover"></div>
+                <div class="ava-css">
+                    <img src="res/img/Abhinav.jpg" />
+                </div>
+                <div class="logName">
+                    <p style="text-align:center">Abhinav Biswas</p>
+                </div>
+                <div id="switch">
+                    <div class="validate">
+                        <form action="#page">
+                            <input type="password" id="password" placeholder="Password" />
+                            <input type="submit" class="submit" />
+                            <div class="tooltip-pass" style="height:90%">
+                                <p style="text-align:center">Password: guest</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- DESKTOP -->
+    <div id="page">
+        <header id="head">
+            <nav id="menu">
+                <ul>
+                    <li class="apple">
+                        <a href="#all">Apple</a>
+                        <ul class="sublist">
+                            <li><a href="#spec" data-rel="show">About Abhinav</a>
+                            </li>
+                            <li><a href="#safari-posts" data-rel="showOpSafari-posts">Status Updates...</a>
+                            </li>
+                            <li><a href="#safari-blog" data-rel="showOpSafari-blog">Blog...</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#warning" data-rel="show">System Preferences...</a>
+                            </li>
+                            <li>Dock
+                                <span class="arrow"></span>
+                                <ul class="sublist-menu">
+                                    <li>Turn Hiding Off</li>
+                                    <li class="disable">Turn Magnification Off</li>
+                                    <li class="divider"></li>
+                                    <li class="disable">Position on Left</li>
+                                    <li>Position on Bottom</li>
+                                    <li class="disable">Position on Right</li>
+                                    <li class="divider"></li>
+                                    <li><a href="#warning" data-rel="show" style="color:#000">Dock Preferences...</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li>Recent Items
+                                <span class="arrow"></span>
+                                <ul class="sublist-menu">
+                                    <li><a href="#about-this-mac" data-rel="show" style="color:#000">About Abhinav</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li class="disable">Documents</li>
+                                    <li class="divider"></li>
+                                    <li class="disable">Servers</li>
+                                    <li class="divider"></li>
+                                    <li class="disable">Clear Menu</li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li>Force Quit...</li>
+                            <li class="divider"></li>
+                            <li class="disable">Sleep</li>
+                            <li><a href="http://abhinav-biswas.appspot.com">Restart...</a>
+                            </li>
+                            <li class="disable">Shut Down...</li>
+                            <li class="divider"></li>
+                            <li><a href="http://abhinav-biswas.appspot.com">Log Out...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="here">
+                        <a href="#all">Finder</a>
+                        <ul class="sublist">
+                            <li><a href="#finder" data-rel="show">About Finder</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#warning" data-rel="show">Preferences...</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#trash" data-rel="show">Secure Empty Trash...</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>Services
+                                <span class="arrow"></span>
+                                <ul class="sublist-menu">
+                                    <li class="disable">No Services Apply</li>
+                                    <li><a href="#warning" data-rel="show" style="color:#000">Services Preferences...</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#" class="mac_desktop">Hide Finder</a>
+                            </li>
+                            <li class="disable">Hide Others</li>
+                            <li class="disable">Show All</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#all">File</a>
+                        <ul class="sublist">
+                            <li><a href="#safari-search" data-rel="showOpSafari-search">Find</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#safari-testimons" data-rel="showOpSafari-testimons">New Finder Window</a>
+                            </li>
+                            <li class="disable">New Folder</li>
+                            <li class="disable">New Folder with Selection</li>
+                            <li><a href="#warning" data-rel="show" style="color:#000">New Smart Folder</a>
+                            </li>
+                            <li><a href="#warning" data-rel="show" style="color:#000">New Burn Folder</a>
+                            </li>
+                            <li class="disable">Open</li>
+                            <li class="disable">Open With
+                                <span class="arrow"></span>
+                            </li>
+                            <li><a onclick="window.print();">Print</a>
+                            </li>
+                            <li class="disable">Close Window</li>
+                            <li class="divider"></li>
+                            <li><a href="#finder" data-rel="show">Get Info</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="disable">Compress</li>
+                            <li class="divider"></li>
+                            <li class="disable">Duplicate</li>
+                            <li class="disable">Make Alias</li>
+                            <li class="disable">Quick Look</li>
+                            <li class="disable">Show Original</li>
+                            <li class="disable">Add to Sidebar</li>
+                            <li class="divider"></li>
+                            <li class="disable">Move to Trash</li>
+                            <li class="disable">Eject</li>
+                            <li class="disable">Burn "Desktop" to Disc...</li>
+                            <li class="divider"></li>
+                            <li class="disable">Label:</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#all">Edit</a>
+                        <ul class="sublist">
+                            <li class="disable">Undo</li>
+                            <li class="disable">Redo</li>
+                            <li class="divider"></li>
+                            <li class="disable">Cut</li>
+                            <li class="disable">Copy</li>
+                            <li class="disable">Paste</li>
+                            <li>Select All</li>
+                            <li class="divider"></li>
+                            <li class="disable">Show Clipboard</li>
+                            <li><a href="#safari-textEdit" data-rel="showOpSafari-textEdit">Open TextEdit</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="disable">Special Characters...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#all">View</a>
+                        <ul class="sublist">
+                            <li>as Icons</li>
+                            <li class="disable">as List</li>
+                            <li class="disable">as Columns</li>
+                            <li class="disable">as Cover Flow</li>
+                            <li class="divider"></li>
+                            <li>Clean Up</li>
+                            <li>Clean Up By
+                                <span class="arrow"></span>
+                                <ul class="sublist-menu">
+                                    <li>Name</li>
+                                    <li>Kind</li>
+                                    <li>Date Modified</li>
+                                    <li>Date Created</li>
+                                    <li>Size</li>
+                                    <li>Label</li>
+                                </ul>
+                            </li>
+                            <li>Sort By
+                                <span class="arrow"></span>
+                                <ul class="sublist-menu">
+                                    <li class="disable">None</li>
+                                    <li class="divider"></li>
+                                    <li>Snap to Grid</li>
+                                    <li class="divider"></li>
+                                    <li class="disable">Name</li>
+                                    <li class="disable">Kind</li>
+                                    <li class="disable">Date Last Opened</li>
+                                    <li class="disable">Date Added</li>
+                                    <li class="disable">Date Modified</li>
+                                    <li class="disable">Date Created</li>
+                                    <li class="disable">Size</li>
+                                    <li class="disable">Label</li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li class="disable">Hide Path Bar</li>
+                            <li class="disable">Hide Status Bar</li>
+                            <li class="disable">Hide Sidebar</li>
+                            <li class="divider"></li>
+                            <li class="disable">Toolbar</li>
+                            <li class="disable">Customize Toolbar...</li>
+                            <li class="divider"></li>
+                            <li><a href="#warning" data-rel="show">Show View Options...</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#all">Go</a>
+                        <ul class="sublist">
+                            <li class="disable">Back</li>
+                            <li class="disable">Forward</li>
+                            <li>Enclosing Folder</li>
+                            <li class="divider"></li>
+                            <li><a href="#about-this-mac" data-rel="show">All My Files</a>
+                            </li>
+                            <li><a href="#safari-testimons" data-rel="showOpSafari-testimons">Documents</a>
+                            </li>
+                            <li><a href="#" class="mac_desktop">Desktop</a>
+                            </li>
+                            <li class="disable">Downloads</li>
+                            <li class="disable">Home</li>
+                            <li class="disable">Computer</li>
+                            <li class="disable">AirDrop</li>
+                            <li class="disable">Network</li>
+                            <li><a href="#safari-launchPad" data-rel="showOpSafari-launchPad">Applications</a>
+                            </li>
+                            <li><a href="#warning" data-rel="show">Utilities</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li>Recent Folders
+                                <span class="arrow"></span>
+                                <ul class="sublist-menu">
+                                    <li><a href="#safari-testimons" data-rel="showOpSafari-testimons" style="color:#000">Testimonials</a>
+                                    </li>
+                                    <li><a href="#safari-github" data-rel="showOpSafari-github" style="color:#000">GitHub Projects</a>
+                                    </li>
+                                    <li><a href="#safari-slideshare" data-rel="showOpSafari-slideshare" style="color:#000">Slideshare PPTs</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li><a href="#" class="mac_desktop" style="color:#000">Clear Menu</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="divider"></li>
+                            <li>Go to Folder...</li>
+                            <li class="disable">Connect to Server...</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#all">Window</a>
+                        <ul class="sublist">
+                            <li><a href="#" class="mac_desktop">Minimize</a>
+                            </li>
+                            <li class="disable">Zoom</li>
+                            <li class="disable">Cycle Through Windows</li>
+                            <li class="divider"></li>
+                            <li><a href="#about-this-mac" data-rel="show">Bring All to Front</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#all">Help</a>
+                        <ul class="sublist">
+                            <li><a href="#safari-contact" data-rel="showOpSafari-contact">Contact Him</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav id="menu-dx">
+                <ul>
+                    <li class="facebook">
+                        <a href="https://www.facebook.com/abhinav.biswas" target="_blank" title="Facebook Profile">Facebook</a>
+                    </li>
+                    <li class="twitter">
+                        <a href="https://twitter.com/Abhinav_Biswas" target="_blank" title="Twitter Profile">Twitter</a>
+                    </li>
+                    <li class="linkedin">
+                        <a href="http://in.linkedin.com/in/abhinavbiswas" target="_blank" title="LinkedIn Profile">LinkedIn</a>
+                    </li>
+                    <li class="wireless">
+                        <a href="#all">Wireless</a>
+                        <ul class="sublist">
+                            <li>Connected to :</li>
+                            <li><b>Abhinav's Cloud Network</b>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="time">
+                        <ul>
+                            <li id="DateAbbr"> </li>
+                            <li class="hour"> </li>
+                            <li class="point">:</li>
+                            <li class="mins"> </li>
+                        </ul>
+                    </li>
+                    <li class="username">
+                        <a href="#safari-posts" data-rel="showOpSafari-posts">Abhinav Biswas</a>
+                    </li>
+                    <li class="search">
+                        <a href="#safari-search" data-rel="showOpSafari-search" title="Spotlight">Search</a>
+                    </li>
+                    <li class="search_noti">
+                        <a onClick="menu2.toggle()" class="sideviewtoggle" title="Notifications">Notifications</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--        Notification Sidebar-->
+        <div id="togglemenu2" class="sidetogglemenu">
+            <p>Latest Tweets :</p>
+            <div id="twitterbody">
+                <a class="twitter-timeline" href="https://twitter.com/Abhinav_Biswas" data-widget-id="348042726551453697" height="360" data-chrome="noheader transparent noscrollbar">Tweets by @Abhinav_Biswas</a>
+                <script>
+                    ! function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + "://platform.twitter.com/widgets.js";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, "script", "twitter-wjs");
+                </script>
+            </div>
+            <p style="display:inline-table;border-bottom:0"></p>
+            <p>Blog Posts :</p>
+            <script src="http://feeds.feedburner.com/AbhinavThePrince?format=sigpro" type="text/javascript"></script>
+            <noscript>
+                <p>Subscribe to RSS headline updates from:
+                    <a href="http://feeds.feedburner.com/AbhinavThePrince" target="_blank"></a>
+                    <br />
+                </p>
+            </noscript>
+        </div>
+
+
+        <div id="warning" class="window warning">
+            <div class="tab">
+                <h1 class="titleInside">Alert</h1>
+            </div>
+            <div class="container">
+                <div class="container-alert">
+                    <img src="res/img/Alert.png" alt="alert" />
+                    <div class="about-alert">
+                        <h3>Sorry,</h3>
+                        <p>Guest users can't use this application</p>
+                        <a href="#warning" class="button blink" data-rel="close">Close</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="trash" class="window warning">
+            <div class="tab"></div>
+            <div class="container">
+                <div class="container-alert">
+                    <img src="res/img/FinderIcon.png" width="48px" height="48px" alt="alert" />
+                    <div class="about-alert">
+                        <h3>Secure Empty Trash permanently erases the items in the your Browser Cache. Are you sure you want to permanently erase them?</h3>
+                        <p>If you choose Secure Empty Trash, you can't recover the items unless you've backed them up using Time Machine or another backup program.</p>
+                        <a href="#trash" class="button blink" data-rel="close">Secure Empty Trash</a>
+                        <a href="#trash" class="button simple" data-rel="close">Cancel</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div id="project" class="window project">
+            <nav class="control-window">
+                <a href="#" class="deactivate">deactivate</a>
+                <a href="#" class="deactivate">deactivate</a>
+                <a href="#" class="deactivate">deactivate</a>
+            </nav>
+            <h1 class="titleInside">About This Project</h1>
+            <div class="container">
+                <div class="container-inside">
+                    <img src="res/img/alessio-atzeni-logo.png" alt="Alessio Atzeni Logo" />
+                    <div class="about-this">
+                        <p style="text-align:center" class="vers">Version 1.1</p>
+                        <p style="text-align:center"><a class="button about" href="http://www.alessioatzeni.com" title="Alessio Atzeni Web Designer &amp; Front-end Developer">By Alessio Atzeni...</a>
+                        </p>
+                        <p>In this project I tried to maximize the use of CSS3.</p>
+                        <p>For the <strong>clock</strong> and the <strong>fake login</strong> I used javascript. (knowing the limitations of CSS3).</p>
+                        <p>To fix a limitation of the pseudo-class <strong>:target</strong> after login via javascript i added a some classes so that the <strong>desktop page</strong> remin visible even clicking on other links</p>
+                        <p>For more information about this project please visit the link</p>
+                        <p><a class="button about" href="http://www.alessioatzeni.com/blog/mac-os-x-lion-with-css3/" title="Mac OS X with CSS3">More Info...</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+
+        <div id="spec" class="window spec" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#spec" class="close" data-rel="close">deactivate</a>
+                <a href="#" class="minimize">deactivate</a>
+                <!--                <a href="#" class="deactivate">deactivate</a>-->
+                <a href="#" class="maximize">deactivate</a>
+            </nav>
+            <h1 class="titleInside">About Him</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div class="container-inside" style="padding:10px; height:100%; overflow:scroll">
+                    <div id="namePlate" class="about-this" style="height:90%;overflow:scroll">
+                        <img src="res/img/AbhinavBiswas.jpg" alt="Abhinav Biswas" width="100%" style="max-width:300px">
+                        <p style="text-align:center"><a class="button about" href="#safari-contact" data-rel="showOpSafari-contact">Abhinav Biswas</a>
+                        </p>
+                        <br>
+                        <p style="font-size:10pt">A voracious reader of technology who usually hangs around waiting to do Foo in Bar.</p>
+                        <br>
+                        <p style="font-size:10pt">He always says that, "My first crush is Mac OS, first love is Google App Engine. But I'm married to Android and having an affair with iOS".</p>
+                        <br>
+                        <p style="font-size:10pt">He invites trouble by recording his thoughts in his <a href="#safari-blog" data-rel="showOpSafari-blog">Blog</a>...</p>
+                    </div>
+                    <div id="nameContent" style="height:100%">
+                        <iframe id="MyIframes-abhinav" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="finder" class="window finder">
+            <nav class="control-window">
+                <a href="#finder" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="deactivate">deactivate</a>
+            </nav>
+            <h1 class="titleInside">About Finder</h1>
+            <div class="container">
+                <div class="container-inside">
+                    <img src="res/img/FinderIcon.png" alt="Finder" />
+                    <div class="about-this">
+                        <h2>Finder</h2>
+                        <p style="text-align:center"><b>Abhinav's Mac Online</b>
+                        </p>
+                        <p style="text-align:center">The Macintosh Desktop Experience</p>
+                        <p style="text-align:center" class="small">Finder version 10.10.5</p>
+                    </div>
+                    <div class="about-this">
+                        <p style="text-align:center;line-height:normal">Just keep dragging & browsing through the windows to find more...</p>
+                    </div>
+                    <div class="copyright">
+                        <p style="text-align:center" class="small">© Abhinav Biswas,
+                            <span id="currentYear"></span>
+                            <br> All Rights Reserved...</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <div id="share" class="window share">
+    <nav class="control-window">
+        <a href="#share" class="close" data-rel="close">close</a>
+        <a href="#" class="minimize">minimize</a>
+        <a href="#" class="maximize">maximize</a>
+    </nav>
+    <h1 class="titleInside">Share This</h1>
+    <div class="container">
+        <div class="container-inside">
+            <ul>
+                <li>
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.alessioatzeni.com/mac-osx-lion-css3/" data-via="Bluxart" data-related="Bluxart">Tweet</a>
+                    <script>
+                        ! function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = "//platform.twitter.com/widgets.js";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }
+                        (document, "script", "twitter-wjs");
+                    </script>
+                </li>
+                <li>
+                    <div id="fb-root"></div>
+                    <script>
+                        (function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (d.getElementById(id)) return;
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = "//connect.facebook.net/it_IT/all.js#xfbml=1&appId=312294205481553";
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }(document, 'script', 'facebook-jssdk'));
+                    </script>
+                    <div class="fb-like" data-href="http://www.alessioatzeni.com/mac-osx-lion-css3/" data-send="false" data-layout="button_count" data-width="140" data-show-faces="false" data-font="lucida grande"></div>
+                </li>
+                <li>
+                    <div class="g-plusone" data-size="medium" data-href="http://www.alessioatzeni.com/mac-osx-lion-css3/"></div>
+                    <script type="text/javascript">
+                        (function () {
+                            var po = document.createElement('script');
+                            po.type = 'text/javascript';
+                            po.async = true;
+                            po.src = 'https://apis.google.com/js/plusone.js';
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+-->
+
+
+        <div id="safari" class="window safari" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Safari</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left">
+                    <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:2px" onclick="history.back()">
+                    </a>
+                </div>
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left;margin-left:1px">
+                    <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:2px">
+                    </a>
+                </div>
+                <div style="padding: 4px;border-style: solid;border-radius: 5px;border-width: thin;border-color: gray;background-color: white;margin-left:62px"><img src="res/img/https.gif" style="padding-right:2px">
+                    <div style="display:inline;-moz-user-select:text;-khtml-user-select:auto;-webkit-user-select:auto;-ms-user-select:auto;user-select:auto;">
+                        <small style="color:#33CC33">https</small>://www.apple.com/macbook/</div>
+                    <a href="https://github.com/Abhinav-Biswas" target="_blank">
+                        <img src="res/img/NewTab.png" style="float:right">
+                    </a>
+                </div>
+                <div class="container-inside" style="padding:10px; height:100%">
+                    <iframe id="MyIframes" scrolling="yes" style="width:100%;height:100%!important;position:relative">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-github" class="window safari-github">
+            <nav class="control-window">
+                <a href="#safari-github" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Safari - GitHub Projects</h1>
+            <div class="container">
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left">
+                    <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:2px" onclick="history.back()">
+                    </a>
+                </div>
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left;margin-left:1px">
+                    <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:2px">
+                    </a>
+                </div>
+                <div style="padding: 4px;border-style: solid;border-radius: 5px;border-width: thin;border-color: gray;background-color: white;margin-left:62px"><img src="res/img/https.gif" style="padding-right:2px">
+                    <div style="display:inline;-moz-user-select:text;-khtml-user-select:auto;-webkit-user-select:auto;-ms-user-select:auto;user-select:auto;"><small style="color:#33CC33">https</small>://github.com/Abhinav-Biswas</div>
+                    <a href="https://github.com/Abhinav-Biswas" target="_blank"><img src="res/img/NewTab.png" style="float:right">
+                    </a>
+                </div>
+                <div class="container-inside" style="padding:10px">
+                    <github-badge user="Abhinav-Biswas" badge="octogeek"></github-badge>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-slideshare" class="window safari-slideshare">
+            <nav class="control-window">
+                <a href="#safari-slideshare" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Safari - SlideShare PPTs</h1>
+            <div class="container">
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left">
+                    <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:2px" onclick="history.back()">
+                    </a>
+                </div>
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left;margin-left:1px">
+                    <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:2px">
+                    </a>
+                </div>
+                <div style="padding: 4px;border-style: solid;border-radius: 5px;border-width: thin;border-color: gray;background-color: white;margin-left:62px"><img src="res/img/https.gif" style="padding-right:2px">
+                    <div style="display:inline;-moz-user-select:text;-khtml-user-select:auto;-webkit-user-select:auto;-ms-user-select:auto;user-select:auto;"><small style="color:#33CC33">https</small>://www.slideshare.net/Abhinav_Biswas</div>
+                    <a href="https://www.slideshare.net/Abhinav_Biswas" target="_blank"><img src="res/img/NewTab.png" style="float:right">
+                    </a>
+                </div>
+                <div class="container-inside" style="padding:10px">
+                    <iframe id="MyIframes-slideshare" scrolling="yes" width="610px" height="570px" frameborder="0" marginwidth="0" marginheight="0" style="border:none" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-testimons" class="window safari-testimons" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari-testimons" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Documents - Testimonials</h1>
+            <!-- n -->
+            <div style="display:inline-block;background-color:silver">
+                <div id='actions' style="margin-top:10px;float:left">
+                    <div id='back' style="display: inline-block;position: relative;height: 20px;width: 25px;margin-top: 1px;border: 1px solid #767676;background-size: 100%;background-color:white;-moz-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-border-radius: 4px;margin-left: 8px;margin-right: 0;color: #797979;">
+                        <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:5px" onclick="history.back()">
+                        </a>
+                    </div>
+                    <div id='next' style="display: inline-block;position: relative;height: 20px;width: 25px;margin-top: 1px;border: 1px solid #767676;background-color:white;-moz-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;">
+                        <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:5px">
+                        </a>
+                    </div>
+                    <div id='iconV' style="display: inline-block;position: relative;height: 20px;margin-top: 1px;border: 1px solid #767676;width: 28px;border-right: 0px;font-size: 13px;color: #fcfcfc;margin-left: 69px;border-left: 1px solid #767676;-moz-border-radius: 4px 0 0 4px;-webkit-border-radius: 4px;border-radius: 4px 0 0 4px;background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzc2NzY3NiIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzlhOWE5YSIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size: 100%;background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #767676), color-stop(100%, #9a9a9a));background-image: -moz-linear-gradient(#767676, #9a9a9a);background-image: -webkit-linear-gradient(#767676, #9a9a9a);background-image: linear-gradient(#767676, #9a9a9a);-moz-box-shadow: #676767 -1px 1px 4px -1px inset, #676767 0px 1px inset, #757575 0px 2px inset, #999999 0px -1px inset, #969696 0px -2px inset;-webkit-box-shadow: #676767 -1px 1px 4px -1px inset, #676767 0px 1px inset, #757575 0px 2px inset, #999999 0px -1px inset, #969696 0px -2px inset;box-shadow: #676767 -1px 1px 4px -1px inset, #676767 0px 1px inset, #757575 0px 2px inset, #999999 0px -1px inset, #969696 0px -2px inset;text-shadow: 0px 1px 1px #545454;">
+                        <a><img src="res/img/boxx.png" style="float:left;height:10px;padding:5px;margin-left:3px">
+                        </a>
+                    </div>
+                    <div id='list' style="display: inline-block;position: relative;height: 20px;margin-top: 1px;border: 1px solid #767676;background-color:white;width: 28px;border-left: 0px;border-right: 0px;-moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;-moz-box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset, #a7a7a7 -1px 0px inset;-webkit-box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset, #a7a7a7 -1px 0px inset;box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset, #a7a7a7 -1px 0px inset;left: -3px;font-size: 15px;">
+                        <a><img src="res/img/lines.png" style="float:left;height:13px;padding:4px;margin-left:3px">
+                        </a>
+                    </div>
+                    <div id='grid' style="display: inline-block;position: relative;height: 20px;margin-top: 1px;border: 1px solid #767676;background-color:white;width: 28px;border-left: 0px;-moz-border-radius: 0;-webkit-border-radius: 0;border-radius: 0;-moz-box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset, #a7a7a7 -1px 0px inset;-webkit-box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset, #a7a7a7 -1px 0px inset;box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset, #a7a7a7 -1px 0px inset;left: -7px;">
+                        <a><img src="res/img/grids.png" style="float:left;height:13px;padding:4px;margin-left:3px">
+                        </a>
+                    </div>
+                    <div id='coverflow' style="display: inline-block;position: relative;height: 20px;width: 38px;margin-top: 1px;border: 1px solid #767676;background-color:white;width: 28px;border-left: 0px;left: -11px;border-right: 1px solid #767676;-moz-border-radius: 0 4px 4px 0;-webkit-border-radius: 0;border-radius: 0 4px 4px 0;-moz-box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset;-webkit-box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset;box-shadow: #e7e7e7 0px 1px inset, #e5e5e5 0px 2px inset, #bdbdbd 0px -1px inset, #bfbfbf 0px -2px inset;">
+                        <i class='view' style="position: absolute;top: 6px;left: 9px;width: 5px;height: 6px;border: 1px solid;border-top-color: #1b1b1b;border-bottom-color: #232323;border-left: #4a4a4a 1px solid;border-right: #4a4a4a 1px solid;-moz-box-shadow: #fff 0px 1px;-webkit-box-shadow: #fff 0px 1px;box-shadow: #fff 0px 1px;background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzZjNmM2YyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzg2ODY4NiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');background-size: 100%;background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #6c6c6c), color-stop(100%, #868686));background-image: -moz-linear-gradient(#6c6c6c, #868686);background-image: -webkit-linear-gradient(#6c6c6c, #868686);background-image: linear-gradient(#6c6c6c, #868686);"></i>
+                    </div>
+                    <div id='info' style="display: inline-block;position: relative;height: 20px;width: 28px;margin-top: 1px;border: 1px solid #767676;background-color:white;-moz-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;color: #4a4a4a;margin-left:15px">
+                        <a><img src="res/img/info-icon.png" style="float:left;height:16px;padding:2px;margin-left:4px">
+                        </a>
+                    </div>
+                    <div id='delete' style="display: inline-block;position: relative;height: 20px;width: 28px;margin-top: 1px;border: 1px solid #767676;background-color:white;-moz-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;color: #a1a1a1;">
+                        <a><img src="res/img/delete.png" style="float:left;height:16px;padding:2px;margin-left:4px">
+                        </a>
+                    </div>
+                    <div id='new_folder' style="display: inline-block;position: relative;height: 20px;width: 28px;margin-top: 1px;border: 1px solid #767676;background-color:white;-moz-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;color: #a1a1a1;">
+                        <a><img src="res/img/new_folder.png" style="float:left;height:16px;padding:2px;margin-left:4px">
+                        </a>
+                    </div>
+                    <div id='settings' style="display: inline-block;position: relative;height: 20px;width: 28px;margin-top: 1px;border: 1px solid #767676;background-color:white;-moz-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-webkit-box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;box-shadow: #f1f1f1 0px 1px inset, #cccccc 0px 1px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;color: #a1a1a1;margin-left:25px">
+                        <a><img src="res/img/settings.png" style="float:left;height:16px;padding:2px;margin-left:4px">
+                        </a>
+                    </div>
+                </div>
+                <div id="googSearch" style="width:30%;float:right;padding-top: 7px;padding-right: 10px;">
+                    <script>
+                        (function () {
+                            var cx = '010643376596631833354:mscbmvlhbta';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                '//cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                        })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+            <!-- n -->
+            <div class="container" style="height:100%;width:100%;position:relative;top:-2px">
+                <div class="container-inside" style="padding-right: 10px;padding-left: 10px;padding-top: 0px;height:100%">
+                    <div id="namePlate" class="about-this" style="height:90%;overflow:scroll;padding-top: 10px;">
+                        <!--                        <img src="res/img/findermenu.png" alt="Abhinav Biswas" width="100%" style="max-width:300px">-->
+                        <ul style="text-align:left">
+                            <li style="color:gray">Favorites</li>
+                            <ul style="margin-top:8px;margin-left:15px">
+                                <li style="height:22px">
+                                    <a href="#warning" data-rel="showOp" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebarInternalDisk_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">Macintosh</p>
+                                    </a>
+                                </li>
+                                <li style="height:22px">
+                                    <a href="#safari-launchPad" data-rel="showOpSafari-launchPad" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebarApplicationsFolder_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">Applications</p>
+                                    </a>
+                                </li>
+                                <li style="height:22px">
+                                    <a href="#spec" data-rel="show" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebarHomeFolder_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">AbhinavBiswas</p>
+                                    </a>
+                                </li>
+                                <li style="height:22px">
+                                    <a href="#" class="mac_desktop" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebarDesktopFolder_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">Desktop</p>
+                                    </a>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarDocumentsFolder_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Documents</p>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarPicturesFolder_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Pictures</p>
+                                </li>
+                                <li style="height:22px">
+                                    <a href="#safari-sound" data-rel="showOpSafari-sound" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebarMusicFolder_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">Music</p>
+                                    </a>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarMoviesFolder_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Movies</p>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebariCloud_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">iCloud Drive</p>
+                                </li>
+                                <li style="height:22px">
+                                    <a href="#warning" data-rel="showOp" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebarAirDrop_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">AirDrop</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <li style="color:gray;margin-top:10px">Devices</li>
+                            <ul style="margin-top:8px;margin-left:15px">
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarLaptop_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Abhinav's Macbook Air</p>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarMacMini_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Airport Disk</p>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarOpticalDisk_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Remote Disc Drive</p>
+                                </li>
+                            </ul>
+                            <li style="color:gray;margin-top:10px">Shared</li>
+                            <ul style="margin-top:8px;margin-left:15px">
+                                <li style="height:22px">
+                                    <a href="#warning" data-rel="showOp" style="text-decoration:none;color:black;"><img style="float:left" src="res/img/SidebariMac_16x16.png">
+                                        <p style="padding-left:22px;padding-top:2px">Abhinav's Windows PC</p>
+                                    </a>
+                                </li>
+                                <li style="height:22px"><img style="float:left" src="res/img/SidebarXserve_16x16.png">
+                                    <p style="padding-left:22px;padding-top:2px">Fusion Pro VM</p>
+                                </li>
+                            </ul>
+                        </ul>
+
+                    </div>
+                    <div style="border-left: thin solid black;float:left;height: 100%;"></div>
+                    <div id="nameContent" style="height:100%;padding-top:10px">
+                        <iframe id="MyIframes-testimons" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                        </iframe>
+                    </div>
+                    <!--
+                    <iframe id="MyIframes-testimons" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+-->
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-posts" class="window safari-posts" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari-posts" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Safari - Abhinav's Status Updates (Online Diary)</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left">
+                    <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:2px" onclick="history.back()">
+                    </a>
+                </div>
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left;margin-left:1px">
+                    <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:2px">
+                    </a>
+                </div>
+                <div style="padding: 4px;border-style: solid;border-radius: 5px;border-width: thin;border-color: gray;background-color: white;margin-left:62px"><img src="res/img/https.gif" style="padding-right:2px">
+                    <div style="display:inline;-moz-user-select:text;-khtml-user-select:auto;-webkit-user-select:auto;-ms-user-select:auto;user-select:auto;">
+                        <small style="color:#33CC33">https</small>://abhinav-biswas.blogspot.com/</div>
+                    <a href="http://abhinav-biswas.blogspot.com/" target="_blank">
+                        <img src="res/img/NewTab.png" style="float:right">
+                    </a>
+                </div>
+                <div class="container-inside" style="padding:10px; height:100%">
+                    <iframe id="MyIframes-posts" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-textEdit" class="window safari-textEdit" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari-textEdit" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">TextEdit - New Document</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div class="container-inside" style="padding:0px; height:100%">
+                    <iframe id="MyIframes-textEdit" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-blog" class="window safari-blog" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari-blog" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Safari - Abhinav's Blog</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left">
+                    <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:2px" onclick="history.back()">
+                    </a>
+                </div>
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left;margin-left:1px">
+                    <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:2px">
+                    </a>
+                </div>
+                <div style="padding: 4px;border-style: solid;border-radius: 5px;border-width: thin;border-color: gray;background-color: white;margin-left:62px"><img src="res/img/https.gif" style="padding-right:2px">
+                    <div style="display:inline;-moz-user-select:text;-khtml-user-select:auto;-webkit-user-select:auto;-ms-user-select:auto;user-select:auto;">
+                        <small style="color:#33CC33">https</small>://abhinavtheprince.blogspot.com/</div>
+                    <a href="http://abhinavtheprince.blogspot.com/" target="_blank">
+                        <img src="res/img/NewTab.png" style="float:right">
+                    </a>
+                </div>
+                <div class="container-inside" style="padding:10px; height:100%">
+                    <iframe id="MyIframes-blog" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-search" class="window safari-search">
+            <nav class="control-window">
+                <a href="#safari-search" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Spotlight Search</h1>
+            <div class="container">
+                <div class="container-inside" style="padding:10px;text-align:left">
+                    <script>
+                        (function () {
+                            var cx = '010643376596631833354:mscbmvlhbta';
+                            var gcse = document.createElement('script');
+                            gcse.type = 'text/javascript';
+                            gcse.async = true;
+                            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                                '//cse.google.com/cse.js?cx=' + cx;
+                            var s = document.getElementsByTagName('script')[0];
+                            s.parentNode.insertBefore(gcse, s);
+                        })();
+                    </script>
+                    <gcse:search></gcse:search>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-sound" class="window safari-sound">
+            <nav class="control-window">
+                <a href="#safari-sound" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">iTunes - SoundCloud</h1>
+            <div class="container">
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left">
+                    <a><img src="res/img/left-arrow.png" style="float:left;height:10px;padding:2px" onclick="history.back()">
+                    </a>
+                </div>
+                <div style="padding:4px;border-style:solid;border-radius:5px;border-width:thin;border-color: gray;background-color:white;width:20px;float:left;margin-left:1px">
+                    <a><img src="res/img/right-arrow.png" style="float:right;height:10px;padding:2px">
+                    </a>
+                </div>
+                <div style="padding: 4px;border-style: solid;border-radius: 5px;border-width: thin;border-color: gray;background-color: white;margin-left:62px"><img src="res/img/https.gif" style="padding-right:2px">
+                    <div style="display:inline;-moz-user-select:text;-khtml-user-select:auto;-webkit-user-select:auto;-ms-user-select:auto;user-select:auto;"><small style="color:#33CC33">https</small>://www.soundcloud.com/abhinav-biswas</div>
+                    <a href="https://www.soundcloud.com/abhinav-biswas" target="_blank"><img src="res/img/NewTab.png" style="float:right">
+                    </a>
+                </div>
+                <div class="container-inside" style="padding:10px">
+                    <iframe id="MyIframes-sound" scrolling="yes" width="610px" height="500px" frameborder="0" marginwidth="0" marginheight="0" style="border:none" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-contact" class="window safari-contact" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari-contact" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Contact Him</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div class="container-inside" style="padding:10px;height:100%">
+                    <iframe id="MyIframes-contact" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:100%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="safari-launchPad" class="window safari-launchPad" style="overflow:hidden">
+            <div id="googSearch2" style="width:20%;margin: auto;padding-top:25px">
+                <script>
+                    (function () {
+                        var cx = '010643376596631833354:mscbmvlhbta';
+                        var gcse = document.createElement('script');
+                        gcse.type = 'text/javascript';
+                        gcse.async = true;
+                        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                            '//cse.google.com/cse.js?cx=' + cx;
+                        var s = document.getElementsByTagName('script')[0];
+                        s.parentNode.insertBefore(gcse, s);
+                    })();
+                </script>
+                <gcse:search></gcse:search>
+            </div>
+            <div class="launchPad" style="margin:auto;height:100%;margin-top:20px;overflow:scroll">
+                <ul>
+                    <li id="finderr" style="float:left">
+                        <a href="#safari-testimons" data-rel="showOpSafari-testimons" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/FinderIcon.png" alt="Finder" />
+                                <figcaption style="text-align:center;color:white">Finder</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="iTunes" style="float:left">
+                        <a href="#safari-sound" data-rel="showOpSafari-sound" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/iTunes.png" alt="iTunes" />
+                                <figcaption style="text-align:center;color:white">SoundCloud iTunes</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="launchPad" style="float:left">
+                        <a href="#safari-slideshare" data-rel="showOpSafari-slideshare" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/SlideShare.png" alt="SlideShare PPTs" />
+                                <figcaption style="text-align:center;color:white">SlideShare PPTs</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="finderr" style="float:left">
+                        <a href="#safari-github" data-rel="showOpSafari-github" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/github.png" alt="GitHub Projects" />
+                                <figcaption style="text-align:center;color:white">GitHub Projects</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="safari" style="float:left">
+                        <a href="#safari-textEdit" data-rel="showOpSafari-textEdit" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/Notes.png" alt="TextEdit" />
+                                <figcaption style="text-align:center;color:white">TextEdit</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="safari" style="float:left">
+                        <a href="#safari-posts" data-rel="showOpSafari-posts" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/blogger.png" alt="Blogger" />
+                                <figcaption style="text-align:center;color:white">Blogger</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="safari" style="float:left">
+                        <a href="#safari" data-rel="showOpSafari" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/Safari.png" alt="Safari" />
+                                <figcaption style="text-align:center;color:white">Safari</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                    <li id="calendar" style="float:left">
+                        <a href="#safari-calendar" data-rel="showOpSafari-calendar" style="text-decoration:none" class="launchPad">
+                            <figure>
+                                <img src="res/img/calendar.png" alt="Calendar" />
+                                <figcaption style="text-align:center;color:white">Calendar</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="safari-calendar" class="window safari-calendar" style="overflow:hidden">
+            <nav class="control-window">
+                <a href="#safari-calendar" class="close" data-rel="close">close</a>
+                <a href="#" class="minimize">minimize</a>
+                <a href="#" class="maximize">maximize</a>
+            </nav>
+            <h1 class="titleInside">Abhinav's Calendar</h1>
+            <div class="container" style="height:100%;width:100%;position:relative">
+                <div class="container-inside" style="padding:10px;height:100%">
+                    <iframe id="MyIframes-calendar" scrolling="yes" frameborder="0" marginwidth="0" marginheight="0" style="border:none;width:100%;position:relative;height:90%!important" allowfullscreen webkitallowfullscreen mozallowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+
+        <!-- DOCK -->
+        <div class="dock">
+            <ul>
+                <li id="finderr">
+                    <a href="#safari-testimons" data-rel="showOpSafari-testimons">
+                        <em><span>Finder</span></em>
+                        <img src="res/img/FinderIcon.png" alt="Finder" />
+                    </a>
+                </li>
+                <li id="launchPad">
+                    <a href="#safari-launchPad" data-rel="showOpSafari-launchPad">
+                        <em><span>Launchpad</span></em>
+                        <img src="res/img/launchPad.png" alt="Launchpad" />
+                    </a>
+                </li>
+                <li id="appStore">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>App Store</span></em>
+                        <img src="res/img/appstore.png" alt="App Store" />
+                    </a>
+                </li>
+                <li id="safari">
+                    <a href="#safari" data-rel="showOpSafari">
+                        <em><span>Safari</span></em>
+                        <img src="res/img/Safari.png" alt="Safari" />
+                    </a>
+                </li>
+                <li id="safari">
+                    <a href="#safari-calendar" data-rel="showOpSafari-calendar">
+                        <em><span>Calendar</span></em>
+                        <img src="res/img/calendar.png" alt="Calendar" />
+                    </a>
+                </li>
+                <li id="iChat">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>iChat</span></em>
+                        <img src="res/img/ichat.png" alt="iChat" />
+                    </a>
+                </li>
+                <li id="facetime">
+                    <a href="#safari-contact" data-rel="showOpSafari-contact">
+                        <em><span>FaceTime</span></em>
+                        <img src="res/img/facetime.png" alt="Facetime" />
+                    </a>
+                </li>
+                <li id="safari">
+                    <a href="#safari-textEdit" data-rel="showOpSafari-textEdit">
+                        <em><span>TextEdit</span></em>
+                        <img src="res/img/Notes.png" alt="TextEdit" />
+                    </a>
+                </li>
+                <li id="preview">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>Preview</span></em>
+                        <img src="res/img/preview.png" alt="Preview" />
+                    </a>
+                </li>
+                <li id="iTunes">
+                    <a href="#safari-sound" data-rel="showOpSafari-sound">
+                        <em><span>iTunes</span></em>
+                        <img src="res/img/iTunes.png" alt="iTunes" />
+                    </a>
+                </li>
+                <li id="preferences">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>System Preferences</span></em>
+                        <img src="res/img/preferences.png" alt="System Preferences" />
+                    </a>
+                </li>
+                <li id="trash">
+                    <a href="#trash" data-rel="showOpTrash">
+                        <em><span>Trash</span></em>
+                        <img src="res/img/trash.png" alt="Trash" />
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!--        DOCK ICONS 2-->
+        <!-- DOCK -->
+        <div class="dock2">
+            <ul style="background:transparent">
+                <li id="facetime">
+                    <a href="#safari-testimons" data-rel="showOpSafari-testimons">
+                        <em><span>Testimonials</span></em>
+                        <img src="res/img/address.png" alt="Testimonials" />
+                    </a>
+                </li>
+                <li id="launchPad">
+                    <a href="#safari-slideshare" data-rel="showOpSafari-slideshare">
+                        <em><span>SlideShare PPTs</span></em>
+                        <img src="res/img/SlideShare.png" alt="SlideShare PPTs" />
+                    </a>
+                </li>
+                <li id="finderr">
+                    <a href="#safari-github" data-rel="showOpSafari-github">
+                        <em><span>GitHub Projects</span></em>
+                        <img src="res/img/github.png" alt="GitHub Projects" />
+                    </a>
+                </li>
+
+
+                <!--
+                <li id="expose">
+                    <a href="#safari-posts" data-rel="showOpSafari-posts">
+                        <em><span>Mission Control</span></em>
+                        <img src="res/img/expose.png" alt="Mission Control" />
+                    </a>
+                </li>
+                <li id="appStore">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>App Store</span></em>
+                        <img src="res/img/appstore.png" alt="App Store" />
+                    </a>
+                </li>
+                <li id="safari">
+                    <a href="#safari" data-rel="showOpSafari">
+                        <em><span>Safari</span></em>
+                        <img src="res/img/Safari.png" alt="Safari" />
+                    </a>    
+                </li>
+                -->
+
+                <!--
+                <li id="iChat">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>iChat</span></em>
+                        <img src="res/img/ichat.png" alt="iChat" />
+                    </a>
+                </li>
+                <li id="addressBook">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>Address Book</span></em>
+                        <img src="res/img/address.png" alt="Address Book" />
+                    </a>
+                </li>
+                <li id="preview">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>Preview</span></em>
+                        <img src="res/img/preview.png" alt="Preview" />
+                    </a>
+                </li>
+                <li id="iTunes">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>iTunes</span></em>
+                        <img src="res/img/iTunes.png" alt="iTunes" />
+                    </a>
+                </li>
+                <li id="preferences">
+                    <a href="#warning" data-rel="showOp">
+                        <em><span>System Preferences</span></em>
+                        <img src="res/img/preferences.png" alt="System Preferences" />
+                    </a>
+                </li>
+                <li id="trash">
+                    <a href="#trash" data-rel="showOpTrash">
+                        <em><span>Trash</span></em>
+                        <img src="res/img/trash.png" alt="Trash" />
+                    </a>
+                </li>
+-->
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="http://cdn.jsdelivr.net/octobadge.github/0.0.1/badge.min.js" type="text/javascript"></script>
+</body>
+
+</html>
