@@ -443,10 +443,7 @@ $(document).ready(function () {
     $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
         e.preventDefault();
         //        alert("hello");
-        $("#safari-testimons").delay(1230).queue(function () {
-            $(this).show();
-            $(this).dequeue();
-        });
+        $("#safari-testimons").show();
     });
 
 
