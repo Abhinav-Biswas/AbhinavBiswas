@@ -440,6 +440,7 @@ $(document).ready(function () {
 
 
 
+<<<<<<< HEAD
     //    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
     //        e.preventDefault();
     //        //        alert("hello");
@@ -448,6 +449,13 @@ $(document).ready(function () {
     //            $(this).dequeue();
     //        });
     //    });
+=======
+    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
+        e.preventDefault();
+        //        alert("hello");
+        $("#safari-testimons").show();
+    });
+>>>>>>> origin/master
 
 
 
