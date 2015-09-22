@@ -38,33 +38,33 @@ $(document).ready(function () {
 
     $('.submit').click(function () {
         var ValPassword = $('#password').val() === 'guest';
-        if (ValPassword === true) {
-            $('input[type=password]').addClass('valid');
-            $('.tooltip-pass').hide();
-            $('.submit').removeClass('submit').addClass('charge');
-            $('#pageLogin').addClass('initLog').delay(1900).queue(function () {
-                $(this).removeClass('initLog').addClass('initLogExit');
-                $(this).dequeue();
-            });;
-            $('#page, #head').delay(2500).queue(function () {
-                $(this).addClass('vis');
-                $(this).dequeue();
-            });
-            $('.window').delay(3000).queue(function () {
-                $(this).addClass('windows-vis');
-                $(this).dequeue();
-            });
-            event.preventDefault();
-        } else {
-            $('.tooltip-pass').hide();
-            $('input[type=password]').select();
-            $('.validate').addClass('error').delay(210).queue(function () {
-                $(this).removeClass('error');
-                $(this).dequeue();
-                $('.tooltip-pass').show();
-            });
-            return false;
-        }
+        //        if (ValPassword === true) {
+        $('input[type=password]').addClass('valid');
+        $('.tooltip-pass').hide();
+        $('.submit').removeClass('submit').addClass('charge');
+        $('#pageLogin').addClass('initLog').delay(1900).queue(function () {
+            $(this).removeClass('initLog').addClass('initLogExit');
+            $(this).dequeue();
+        });;
+        $('#page, #head').delay(2500).queue(function () {
+            $(this).addClass('vis');
+            $(this).dequeue();
+        });
+        $('.window').delay(3000).queue(function () {
+            $(this).addClass('windows-vis');
+            $(this).dequeue();
+        });
+        event.preventDefault();
+        //        } else {
+        //            $('.tooltip-pass').hide();
+        //            $('input[type=password]').select();
+        //            $('.validate').addClass('error').delay(210).queue(function () {
+        //                $(this).removeClass('error');
+        //                $(this).dequeue();
+        //                $('.tooltip-pass').show();
+        //            });
+        //            return false;
+        //        }
     });
 
     //-----------------------------------------------------------------------------------
@@ -381,7 +381,7 @@ $(document).ready(function () {
             $(this).dequeue();
         });
     });
-    
+
     $("a[data-rel=showOpSafari-calendar]").click(function (e) {
         e.preventDefault();
         //        $(this).addClass('bounce').delay(1600).queue(function () {
@@ -401,12 +401,12 @@ $(document).ready(function () {
         //        itemR.fadeOut(500);
         $(this.hash).hide();
     });
-    
+
     $(".launchPad").click(function (e) {
         //        e.preventDefault();
         $("#safari-launchPad").hide("slow");
     });
-    
+
     $(".mac_desktop").click(function (e) {
         //        e.preventDefault();
         $("#warning").hide();
@@ -440,14 +440,14 @@ $(document).ready(function () {
 
 
 
-    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
-        e.preventDefault();
-        //        alert("hello");
-        $("#safari-testimons").delay(1230).queue(function () {
-            $(this).show();
-            $(this).dequeue();
-        });
-    });
+    //    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
+    //        e.preventDefault();
+    //        //        alert("hello");
+    //        $("#safari-testimons").delay(1230).queue(function () {
+    //            $(this).show();
+    //            $(this).dequeue();
+    //        });
+    //    });
 
 
 

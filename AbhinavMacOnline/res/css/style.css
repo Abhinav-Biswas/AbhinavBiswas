@@ -358,9 +358,9 @@ body {
 }
 
 .hide:target ~ .logName {
-    -moz-transform: translateX(10px);
+    -moz-transform: translateX(0px);
     -moz-transition: all 0.3s linear;
-    -webkit-transform: translateX(10px);
+    -webkit-transform: translateX(0px);
     -webkit-transition: all 0.3s linear;
 }
 
