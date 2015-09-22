@@ -439,23 +439,23 @@ $(document).ready(function () {
     $('iframe#MyIframes-calendar').attr('src', 'https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=abhinav.the.prince.7star%40gmail.com&amp;color=%23182C57&amp;src=%23contacts%40group.v.calendar.google.com&amp;color=%23B1440E&amp;src=en.indian%23holiday%40group.v.calendar.google.com&amp;color=%232F6309&amp;src=ht3jlfaac5lfd6263ulfh4tql8%40group.calendar.google.com&amp;color=%23875509&amp;ctz=Asia%2FCalcutta');
 
 
-
-<<<<<<< HEAD
+    //
+    //<<<<<<< HEAD
+    //    //    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
+    //    //        e.preventDefault();
+    //    //        //        alert("hello");
+    //    //        $("#safari-testimons").delay(1230).queue(function () {
+    //    //            $(this).show();
+    //    //            $(this).dequeue();
+    //    //        });
+    //    //    });
+    //=======
     //    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
     //        e.preventDefault();
     //        //        alert("hello");
-    //        $("#safari-testimons").delay(1230).queue(function () {
-    //            $(this).show();
-    //            $(this).dequeue();
-    //        });
+    //        $("#safari-testimons").show();
     //    });
-=======
-    $('iframe#MyIframes-abhinav').bind('extTestimonTrigger', function (e) {
-        e.preventDefault();
-        //        alert("hello");
-        $("#safari-testimons").show();
-    });
->>>>>>> origin/master
+    //>>>>>>> origin/master
 
 
 
