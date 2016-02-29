@@ -37,11 +37,11 @@ $(document).ready(function () {
     //-----------------------------------------------------------------------------------
 
     $('.submit').click(function () {
-        var ValPassword = $('#password').val() === 'guest';
+        //var ValPassword = $('#password').val() === 'guest';
         //        if (ValPassword === true) {
-        $('input[type=password]').addClass('valid');
+        //$('input[type=password]').addClass('valid');
         $('.tooltip-pass').hide();
-        $('.submit').removeClass('submit').addClass('charge');
+        //$('.submit').removeClass('submit').addClass('charge');
         $('#pageLogin').addClass('initLog').delay(1900).queue(function () {
             $(this).removeClass('initLog').addClass('initLogExit');
             $(this).dequeue();
