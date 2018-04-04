@@ -427,12 +427,12 @@ $(document).ready(function () {
         $("#finder").hide();
     });
 
-    $('iframe#MyIframes').attr('src', 'http://www.apple.com/macbook/');
+    $('iframe#MyIframes').attr('src', 'https://www.linkedin.com/in/abhinavbiswas/');
     $('iframe#MyIframes-slideshare').attr('src', 'http://www.slideshare.net/Abhinav_Biswas/slideshelf');
     $('iframe#MyIframes-testimons').attr('src', 'testimonials-3.html');
     $('iframe#MyIframes-posts').attr('src', 'http://abhinav-biswas.blogspot.com');
     $('iframe#MyIframes-textEdit').attr('src', 'textEdit.html');
-    $('iframe#MyIframes-blog').attr('src', 'http://abhinavtheprince.blogspot.com');
+    $('iframe#MyIframes-blog').attr('src', 'http://abhinavbiswas.blogspot.com');
     $('iframe#MyIframes-sound').attr('src', 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/54299475&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false');
     $('iframe#MyIframes-abhinav').attr('src', 'abhinav.html');
     $('iframe#MyIframes-contact').attr('src', 'contact.html');
